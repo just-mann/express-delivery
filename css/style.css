@@ -1,3 +1,19 @@
-body {
-  background: red;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header .top-section {
+  background: #560c88;
+  color: #ececec;
 }
