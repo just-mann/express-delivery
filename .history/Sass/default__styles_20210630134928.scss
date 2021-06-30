@@ -1,0 +1,28 @@
+// Styles for items like buttons, links, lists, and colors, fonts, etc..
+
+// Variables
+$primary__color: #F34963;
+$secondary__color: #560c88;
+$light__white: #ffffff;
+$dark__white: #d1d1d1;
+
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+

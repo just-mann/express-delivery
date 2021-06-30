@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'default__styles';
+
+header {
+    .top-section {
+        background: $secondary__color;
+        color: $light__color;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

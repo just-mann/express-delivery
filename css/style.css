@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@300&family=Fredoka+One&family=Permanent+Marker&family=Red+Hat+Text:wght@300&family=Roboto:wght@100&family=Sacramento&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,15 +6,225 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
 
-ul {
+ul, li {
   list-style: none;
+}
+
+body {
+  position: relative;
 }
 
 header .top-section {
   background: #560c88;
-  color: #ececec;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 60px;
+  height: 45px;
+}
+header .top-section p {
+  font-size: 0.87rem;
+  color: #d1d1d1;
+  letter-spacing: 1px;
+  margin: 0 10px;
+}
+header .top-section p .emailAdd {
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+header .top-section p i {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header .top-section p:hover i {
+  color: #F34963;
+}
+header nav {
+  padding: 0px 60px;
+  width: 100%;
+  height: 95px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .logo {
+  font-size: 2.3rem;
+  color: #F34963;
+  font-weight: 450;
+  letter-spacing: 1px;
+  font-family: "Permanent Marker", cursive;
+}
+header nav .logo span {
+  color: #560c88;
+}
+header nav .nav__links a {
+  color: #560c88;
+  font-size: 1rem;
+  margin: 0 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Fredoka One", cursive;
+  font-weight: 150;
+  letter-spacing: 0.5px;
+}
+header nav .nav__links a:hover {
+  color: #F34963;
+}
+header nav .nav__links .quoteGet {
+  border: none;
+  background: #F34963;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-family: "Fredoka One", cursive;
+  font-weight: 150;
+  letter-spacing: 1px;
+}
+header nav .nav__links .quoteGet:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+header .hero__div {
+  height: 90vh;
+  z-index: 0;
+}
+header .hero__div .hero__section {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("/images/heroImg.jpg") no-repeat center center/cover;
+}
+header .hero__div .hero__section .hero__overlay {
+  background: rgba(0, 0, 0, 0.678);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
+header .hero__div .hero__section .hero__overlay h2 {
+  font-size: 5rem;
+  margin-top: 30px;
+  font-family: "Fredoka One", cursive;
+  font-weight: 90;
+}
+header .hero__div .hero__section .hero__overlay .firstPara {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin: 30px 0px 6px 0px;
+  color: #d1d1d1;
+}
+header .hero__div .hero__section .hero__overlay .secondPara {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin: 5px 0px;
+  color: #d1d1d1;
+}
+header .hero__div .hero__section .hero__overlay a {
+  border: none;
+  background: #F34963;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-family: "Fredoka One", cursive;
+  font-weight: 150;
+  letter-spacing: 1px;
+  margin: 80px 0px 5px 0px;
+}
+header .hero__div .hero__section .hero__overlay a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.aboutUs {
+  max-width: 100%;
+  min-height: 50vh;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background: #f8f5f5;
+}
+.aboutUs .about__card-div {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (300px)[3];
+  grid-template-columns: repeat(3, 300px);
+}
+.aboutUs .about__card-div .card {
+  min-height: 500px;
+  margin: 10px 20px;
+  text-align: center;
+}
+.aboutUs .about__card-div .card .imgDiv {
+  min-height: 30%;
+  padding: 0px;
+}
+.aboutUs .about__card-div .card img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutUs .about__card-div .card div {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: left;
+  background: #d1d1d1;
+}
+.aboutUs .about__card-div .card div h4 {
+  font-size: 1.3rem;
 }

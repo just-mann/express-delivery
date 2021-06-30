@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'default__styles';
+
+header {
+    .top-section {
+        background: $secondary__color;
+        color: $light__white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 20px;
+
+        p {
+            font-size: 0.95rem;
+            color: $dark__white;
+            letter-spacing: 1px;
+            margin: 0 10px;
+            transition: 0.7s;
+            .emailAdd {
+                border-left: 1px solid red;
+                border-right: 1px solid red;
+            }
+            &:hover {
+                i {
+                    color: $primary__color;
+                }
+            }
+        }
+    }
+}

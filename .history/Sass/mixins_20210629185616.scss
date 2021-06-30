@@ -1,0 +1,12 @@
+// Button Mixin
+@mixin btn_style {
+    border: none;
+    background: $primary__color;
+    color: $light__white;
+    padding: 8px 15px;
+
+    &:hover {
+        color: $light__white;
+        cursor: pointer;
+    }
+}

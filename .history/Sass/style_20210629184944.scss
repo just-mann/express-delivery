@@ -1,0 +1,107 @@
+@import 'reset';
+@import 'default__styles';
+@import 'mixins';
+
+header {
+    .top-section {
+        background: $secondary__color;
+        color: $light__white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 0px;
+        height: 45px;
+
+        p {
+            font-size: 0.87rem;
+            color: $dark__white;
+            letter-spacing: 0.8px;
+            margin: 0 10px;
+
+            .emailAdd {
+                border-left: 1px solid red;
+                border-right: 1px solid red;
+            }
+
+            i {
+                transition: 0.7s;
+            }
+            
+            
+            
+            &:hover {
+                i {
+                    color: $primary__color;
+                }
+            }
+        }
+    }
+
+    nav {
+        // position: sticky;
+        // top: 0;
+        // left: 0;
+        width: 100%;
+        height: 100px;
+        padding: 0px 35px;
+        background: $light__white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 2.3rem;
+            color: $primary__color;
+            font-weight: bold;
+            span {
+                color: $secondary__color;
+            }
+        }
+
+        .nav__links {
+            a {
+                color: $secondary__color;
+                font-size: 1.2rem;
+                margin: 0 15px;
+                transition: 0.5s;
+
+                &:hover {
+                    color: $primary__color;
+                }
+                
+            }
+            
+            .quoteGet {
+                @include btn_style;
+            }
+        }
+    }
+
+    .hero__div {
+        height: 80vh;
+        .hero__section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/images/heroImg.jpg') no-repeat center center / cover;
+
+            .hero__overlay {
+                // display: none;
+                background: rgba(0, 0, 0, 0.658);
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: $light__white;
+
+                h2 {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}

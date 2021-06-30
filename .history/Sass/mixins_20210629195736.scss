@@ -1,0 +1,22 @@
+// Button Mixin
+@mixin btn_style {
+    border: none;
+    background: $primary__color;
+    color: $light__white;
+    padding: 10px 15px;
+
+    &:hover {
+        color: $light__white;
+        cursor: pointer;
+    }
+}
+
+@mixin divShadow {
+    box-shadow: -1px -3px 46px 16px rgba(0,0,0,0.23);
+        -webkit-box-shadow: -1px -3px 46px 16px rgba(0,0,0,0.23);
+        -moz-box-shadow: -1px -3px 46px 16px rgba(0,0,0,0.23);
+}
+
+@mixin my_container {
+    padding: 0px 75px;
+}

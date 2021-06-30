@@ -1,0 +1,17 @@
+@import 'reset';
+@import 'default__styles';
+
+header {
+    .top-section {
+        background: $secondary__color;
+        color: $light__white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 20px;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
