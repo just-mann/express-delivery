@@ -1,0 +1,593 @@
+@import 'reset';
+@import 'default__styles';
+@import 'mixins';
+@import 'responsive';
+
+body {
+    position: relative;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: hsla(0, 0%, 11%, 0.93);
+    @include flex(column, center, center);
+}
+
+.spinner-border {
+    color: $primary__color;
+    width: 400px;
+    height: 300px;
+    font-size: 20rem;
+    @include flex(column, center, center);
+}
+
+
+header {
+    .top-section {
+        @include my_container;
+        background: $secondary__color;
+        color: $light__white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 45px;
+
+        p {
+            font-family: $third__font;
+            font-size: 0.87rem;
+            font-weight: bold;
+            color: $dark__white;
+            letter-spacing: 0.9px;
+            margin: 0 10px;
+            transition: 0.7s;
+
+            @include flex(row, center, center);
+
+            .emailAdd {
+                border-left: 1px solid red;
+                border-right: 1px solid red;
+            }
+
+            i {
+                font-size: 1.4rem;
+                transition: 0.7s;
+                margin-right: 3px;
+            }
+            
+            
+            
+            &:hover {
+
+                color: $light__white;
+
+                i {
+                    color: $primary__color;
+                }
+            }
+        }
+    }
+
+    nav {
+        @include my_container;
+        width: 100%;
+        height: 95px;
+        // padding: 0px 35px;
+        background: $light__white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 2.3rem;
+            color: $primary__color;
+            font-weight: 450;
+            letter-spacing: 1px;
+            font-family: $primary__font;
+            text-decoration: none;
+
+            span {
+                color: $secondary__color;
+            }
+        }
+
+        .nav__links {
+            a {
+                color: $secondary__color;
+                font-size: 1.2rem;
+                margin: 0 15px;
+                transition: 0.5s;
+                font-family: $secondary__font;
+                font-weight: 150;
+                letter-spacing: 0.5px;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary__color;
+                }
+                
+            }
+            
+            .quoteGet {
+                @include btn_style;
+            }
+        }
+    }
+
+    .hero__div {
+        height: 650px;
+        z-index: 0;
+        .hero__section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/images/heroImg.jpg') no-repeat center center / cover;
+
+            .hero__overlay {
+               @include overlay__style(0.85);
+               padding: 40px 0px;
+
+                h2 {
+                    font-size: 5rem;
+                    margin-top: 30px;
+                    font-family: $secondary__font;
+                    font-weight: 90;
+                }
+
+                .firstPara {
+                    font-family: $third__font;
+                    font-size: 1.6rem;
+                    font-weight: 150;
+                    line-height: 1.4em;
+                    margin: 30px 0px 6px 0px;
+                    color: $dark__white;
+                }
+
+                .secondPara {
+                    font-family: $third__font;
+                    font-size: 1.6rem;
+                    font-weight: 150;
+                    line-height: 1.4em;
+                    margin: 5px 0px;
+                    color: $dark__white;
+                }
+
+                a {
+                    @include btn_style;
+                    margin: 80px 0px 5px 0px;
+                }
+            }
+        }
+    }
+}
+
+// products description
+.product__description {
+    @include flex(column, center, center);
+    background: rgb(173, 173, 173);
+    padding: 40px 0px;
+    min-height: 450px;
+    text-align: center;
+
+    h2 {
+        font-family: $secondary__font;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        // margin: 5px 0px;
+    }
+
+    .carousel {
+        margin: 20px 0px 6px 0px;
+
+        .carousel-indicators {
+            ol {
+                li {
+                    background: $primary__color;
+                }
+            }
+        }
+
+        .carousel-item {
+            // @include flex(row, center, center);
+            height: 500px;
+            // background: yellow;
+
+            .product__div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .imgDiv {
+                    // background: green;
+                    img {
+                        height: 400px;
+                        width: 500px;
+                    }
+                }
+
+                .infoDiv {
+                    @include flex(column, center, flex-start);
+                    padding: 5px 25px;
+                    background: $primary__color;
+                    max-width: 250px;
+                    height: 90%;
+                    text-align: left;
+
+                    h3 {
+
+                    }
+
+                    p {
+                        font-family: $third__font;
+                        font-size: 1.2rem;
+                    }
+
+                    a {
+                        @include border(3px, $light__white);
+                        text-decoration: none;
+                        background: $light__white;
+                        color: $secondary__color;
+                        font-weight: bold;
+                        padding: 8px 20px;
+                        transition: background-color 0.3s;
+                        margin: 20px 0px 5px 0px;
+                        
+                        &:hover {
+                            @include border(3px, $light__white);
+                            background: transparent;
+                            color: $light__white;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+// About Us
+.aboutUs {
+    max-width: 100%;
+    min-height: 450px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 40px;
+    background: #f8f5f5;
+
+    h3 {
+        font-family: $secondary__font;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        margin: 30px 0px 10px 0px;
+    }
+
+    p {
+
+    }
+
+    .about__card-div {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 25px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 300px);
+
+        .myCard {
+            min-height: 500px;
+            margin: 10px 20px;
+            text-align: center;
+            &:hover {
+                // @include divShadow;
+            }
+            
+            .imgDiv {
+                min-height: 30%;
+                padding: 0px;
+            }
+
+            img {
+                width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
+            
+            div {
+                padding: 15px;
+                margin: 0 auto;
+                text-align: left;
+                background: $dark__white;
+
+                h4 {
+                    font-size: 1.3rem;
+                }
+
+                h6 {
+
+                }
+
+                p {
+
+                }
+            }
+        }
+    }
+}
+
+
+// Get a Quote
+.contact {
+    @include bgImage(container__contact);
+    min-height: 90vh;
+    
+    .contact__overlay {
+        @include overlay__style(0.75);
+        padding: 80px 35px;
+
+        h3 {
+            font-family: $secondary__font;
+            font-size: 2.5rem;
+            letter-spacing: 2.5px;
+            margin-top: 30px;
+        }
+
+        form {
+            width: 70%;
+            height: 70%;
+            padding: 25px;
+
+            select {
+                @include border(2px, $dark__white);
+                width: 50%;
+                padding: 8px 15px;
+                background: transparent;
+                font-family: $third__font;
+                color: $light__white;
+                border-radius: 0px;
+                font-size: 1.2rem;
+
+                option {
+                    padding: 10px;
+                    color: #000000;
+                    font-size: 1.2rem;
+                }
+            }
+
+            label {
+                display: block;
+                margin: 25px 0px 5px 0px;
+                width: 50%;
+                text-align: left;
+                font-size: 1.2rem;
+                font-family: $third__font;
+                letter-spacing: 1px;
+
+                &::after {
+                    content: " *";
+                    color: $primary__color;
+                }
+            }
+
+            div {
+                width: 50%;
+                margin: 15px auto;
+
+                input {
+                    @include border(2px, $dark__white);
+                    width: 100%;
+                    background: transparent;
+                    color: $light__white;
+                    padding: 8px 15px;
+                    border-radius: 0px;
+                    font-size: 1.2rem;
+                }
+            }
+
+            input[type="submit"] {
+                @include btn_style;
+                width: 100%;
+                font-size: 1.2rem;
+                font-weight: 150;
+                letter-spacing: 1px;
+            }
+
+            
+            
+        }
+    }
+
+}
+
+
+
+
+
+.gallery {
+    padding: 35px;
+    
+    h3 {
+        font-family: $secondary__font;
+        font-size: 2.5rem;
+        margin: 25px 0px;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+    
+    .gallery__div {
+        @include ClearFix;
+        @include grid(30em, 1fr);
+        margin: 0 auto;
+        
+        .firstGrid {
+            grid-area: 1 / 3;
+        }
+          
+        li {
+            margin: 10px;
+            object-fit: cover;
+            position: relative;
+
+            .over__lay {
+                @include btn_style;
+                background: rgba($primary__color, 0.78);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s linear;
+                visibility: hidden;
+
+                h3 {
+                    color: white;
+                }
+            }
+
+            &:hover {
+                .over__lay {
+                    // display: block;
+                    visibility: visible;
+                }
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }     
+
+    
+}
+
+
+.footer {
+    max-width: 100%;
+    .footer__top {
+        @include my_container;
+        @include grid(30em, 1fr);
+        background: #161515;
+        color: $light__white;
+        min-height: 60vh;
+        text-align: left;
+
+        .usefulLinks {
+            @include flex(column, space-between, flex-start);
+            margin: 0 10px;
+            
+            h4 {
+                font-family: $third__font;
+                letter-spacing: 2px;
+                font-size: 2rem;
+                margin: 15px 0px;
+                font-weight: bold;
+            }
+            
+            div {
+                a {
+                    display: block;
+                    font-family: $third__font;
+                    color: $light__white;
+                    font-size: 1.2rem;
+                    margin: 10px 0px;
+                    font-weight: 300;
+                    transition: 0.7s;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $dark__white;
+                    }
+                }
+            }
+        }
+        
+        .infoDiv {
+            min-height: 175px;
+            padding: 0px 10px;
+            margin: 0 10px;
+            @include flex(column, space-between, flex-start);
+
+            h4 {
+                font-family: $third__font;
+                letter-spacing: 2px;
+                font-size: 2rem;
+                margin: 15px 0px;
+                font-weight: bold;
+            }
+
+            p {
+                font-family: $third__font;
+                font-size: 1.2rem;
+                letter-spacing: 0.8px;
+                margin: 5px 0px 20px 0px;
+                font-weight: 100;
+            }
+
+            .social__links {
+                a {
+                    color: $light__white;
+                    font-size: 2.2rem;
+                    margin: 0px 30px 0px 0px;
+                }
+            }
+        }
+
+
+    }
+
+    .footer__bottom {
+        @include my_container;
+        background: black;
+        color: $light__white;
+        text-align: center;
+
+        p {
+            @include my_container;
+            font-family: $third__font;
+            letter-spacing: 1px;
+            text-align: center;
+
+            span {
+                font-family: $primary__font;
+                color: $primary__color;
+
+                span {
+                    color: $light__white;
+                }
+            }
+        }
+    }
+}
+
+.page__up__arrow {
+    @include btn_style;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    text-align: center;
+    z-index: 500;
+
+    &:hover {
+        background: transparent;
+        color: $primary__color;
+        @include border(3px, $primary__color);
+    }
+}
