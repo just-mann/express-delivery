@@ -1,0 +1,264 @@
+@import 'reset';
+@import 'default__styles';
+@import 'mixins';
+
+body {
+    position: relative;
+}
+
+
+header {
+    .top-section {
+        background: $secondary__color;
+        color: $light__white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // padding: 15px 0px;
+        @include my_container;
+        height: 45px;
+
+        p {
+            font-family: $third__font;
+            font-size: 0.87rem;
+            font-weight: bold;
+            color: $dark__white;
+            letter-spacing: 0.9px;
+            margin: 0 10px;
+
+            .emailAdd {
+                border-left: 1px solid red;
+                border-right: 1px solid red;
+            }
+
+            i {
+                transition: 0.7s;
+            }
+            
+            
+            
+            &:hover {
+                i {
+                    color: $primary__color;
+                }
+            }
+        }
+    }
+
+    nav {
+        // position: sticky;
+        // top: 0;
+        // left: 0;
+        @include my_container;
+        width: 100%;
+        height: 95px;
+        // padding: 0px 35px;
+        background: $light__white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 2.3rem;
+            color: $primary__color;
+            font-weight: 450;
+            letter-spacing: 1px;
+            font-family: $primary__font;
+            span {
+                color: $secondary__color;
+            }
+        }
+
+        .nav__links {
+            a {
+                color: $secondary__color;
+                font-size: 1rem;
+                margin: 0 15px;
+                transition: 0.5s;
+                font-family: $secondary__font;
+                font-weight: 150;
+                letter-spacing: 0.5px;
+
+                &:hover {
+                    color: $primary__color;
+                }
+                
+            }
+            
+            .quoteGet {
+                @include btn_style;
+            }
+        }
+    }
+
+    .hero__div {
+        height: 90vh;
+        z-index: 0;
+        .hero__section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/images/heroImg.jpg') no-repeat center center / cover;
+
+            .hero__overlay {
+                // display: none;
+                background: rgba(0, 0, 0, 0.678);
+                height: 100%;
+                width: 100%;
+                padding: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: $light__white;
+                text-align: center;
+
+                h2 {
+                    font-size: 5rem;
+                    margin-top: 30px;
+                    font-family: $secondary__font;
+                    font-weight: 90;
+                }
+
+                .firstPara {
+                    font-family: $third__font;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    line-height: 1.4em;
+                    margin: 30px 0px 6px 0px;
+                    color: $dark__white;
+                }
+                .secondPara {
+                    font-family: $third__font;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    line-height: 1.4em;
+                    margin: 5px 0px;
+                    color: $dark__white;
+                }
+
+                a {
+                    @include btn_style;
+                    margin: 80px 0px 5px 0px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// About Us
+.aboutUs {
+    max-width: 100%;
+    min-height: 50vh;
+    text-align: center;
+    margin: 0px auto;
+    padding: 40px;
+    background: #f8f5f5;
+
+    h3 {
+
+    }
+
+    p {
+
+    }
+
+    .about__card-div {
+        // background: yellow;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 25px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 300px);
+
+        .card {
+            min-height: 500px;
+            margin: 10px 20px;
+            text-align: center;
+            &:hover {
+                // @include divShadow;
+            }
+            
+            .imgDiv {
+                min-height: 30%;
+                padding: 0px;
+            }
+
+            img {
+                width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
+            
+            div {
+                padding: 15px;
+                margin: 0 auto;
+                text-align: left;
+                background: $dark__white;
+
+                h4 {
+                    font-size: 1.3rem;
+                }
+
+                h6 {
+
+                }
+
+                p {
+
+                }
+            }
+        }
+    }
+}
+
+
+// Get a Quote
+.contact {
+    height: 90vh;
+}
+
+
+
+
+
+.gallery {
+    padding: 35px;
+    
+    h3 {
+        font-family: $secondary__font;
+        font-size: 2.5rem;
+        margin: 25px 0px;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+    
+    .gallery__div {
+        @include ClearFix;
+        text-align: center;
+        margin: 0 auto;
+        @include grid(20rem, 1fr);
+        
+          
+        li {
+            margin: 10px;
+            object-fit: cover;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+     
+
+    
+}

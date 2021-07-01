@@ -23,6 +23,7 @@ body {
 }
 
 header .top-section {
+  padding: 15px 60px;
   background: #560c88;
   color: #ffffff;
   display: -webkit-box;
@@ -34,13 +35,14 @@ header .top-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 60px;
   height: 45px;
 }
 header .top-section p {
+  font-family: "Red Hat Text", sans-serif;
   font-size: 0.87rem;
-  color: #d1d1d1;
-  letter-spacing: 1px;
+  font-weight: bold;
+  color: #b8b7b7;
+  letter-spacing: 0.9px;
   margin: 0 10px;
 }
 header .top-section p .emailAdd {
@@ -55,7 +57,7 @@ header .top-section p:hover i {
   color: #F34963;
 }
 header nav {
-  padding: 0px 60px;
+  padding: 15px 60px;
   width: 100%;
   height: 95px;
   background: #ffffff;
@@ -93,16 +95,19 @@ header nav .nav__links a:hover {
   color: #F34963;
 }
 header nav .nav__links .quoteGet {
-  border: none;
+  border: 3px solid #F34963;
   background: #F34963;
   color: #ffffff;
   padding: 10px 15px;
   font-family: "Fredoka One", cursive;
   font-weight: 150;
   letter-spacing: 1px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 header nav .nav__links .quoteGet:hover {
-  color: #ffffff;
+  border: 3px solid #F34963;
+  background: transparent;
   cursor: pointer;
 }
 header .hero__div {
@@ -124,9 +129,10 @@ header .hero__div .hero__section {
   background: url("/images/heroImg.jpg") no-repeat center center/cover;
 }
 header .hero__div .hero__section .hero__overlay {
-  background: rgba(0, 0, 0, 0.678);
+  background: rgba(0, 0, 0, 0.675);
   height: 100%;
   width: 100%;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +161,7 @@ header .hero__div .hero__section .hero__overlay .firstPara {
   font-weight: 300;
   line-height: 1.4em;
   margin: 30px 0px 6px 0px;
-  color: #d1d1d1;
+  color: #b8b7b7;
 }
 header .hero__div .hero__section .hero__overlay .secondPara {
   font-family: "Red Hat Text", sans-serif;
@@ -163,21 +169,36 @@ header .hero__div .hero__section .hero__overlay .secondPara {
   font-weight: 300;
   line-height: 1.4em;
   margin: 5px 0px;
-  color: #d1d1d1;
+  color: #b8b7b7;
 }
 header .hero__div .hero__section .hero__overlay a {
-  border: none;
+  border: 3px solid #F34963;
   background: #F34963;
   color: #ffffff;
   padding: 10px 15px;
   font-family: "Fredoka One", cursive;
   font-weight: 150;
   letter-spacing: 1px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   margin: 80px 0px 5px 0px;
 }
 header .hero__div .hero__section .hero__overlay a:hover {
-  color: #ffffff;
+  border: 3px solid #F34963;
+  background: transparent;
   cursor: pointer;
+}
+
+.product__description {
+  padding: 40px 0px;
+  min-height: 70vh;
+  text-align: center;
+}
+.product__description h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin: 20px 0px;
 }
 
 .aboutUs {
@@ -185,9 +206,14 @@ header .hero__div .hero__section .hero__overlay a:hover {
   min-height: 50vh;
   text-align: center;
   margin: 0px auto;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding: 40px;
   background: #f8f5f5;
+}
+.aboutUs h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin: 20px 0px;
 }
 .aboutUs .about__card-div {
   max-width: 100%;
@@ -223,8 +249,252 @@ header .hero__div .hero__section .hero__overlay a:hover {
   padding: 15px;
   margin: 0 auto;
   text-align: left;
-  background: #d1d1d1;
+  background: #b8b7b7;
 }
 .aboutUs .about__card-div .card div h4 {
   font-size: 1.3rem;
+}
+.contact {
+  background: url("/images/container__contact.jpg") no-repeat center center/cover;
+  min-height: 90vh;
+}
+.contact .contact__overlay {
+  background: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 35px;
+}
+.contact .contact__overlay h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 2.5px;
+  margin-top: 30px;
+}
+.contact .contact__overlay form {
+  width: 70%;
+  height: 70%;
+  padding: 25px;
+}
+.contact .contact__overlay form select {
+  border: 2px solid #b8b7b7;
+  width: 50%;
+  padding: 8px 15px;
+  background: transparent;
+  font-family: "Red Hat Text", sans-serif;
+  color: #ffffff;
+  border-radius: 0px;
+}
+.contact .contact__overlay form select option {
+  padding: 5px 10px;
+  color: #000000;
+}
+.contact .contact__overlay form label {
+  display: block;
+  margin: 25px 0px 5px 0px;
+  width: 50%;
+  text-align: left;
+  font-family: "Red Hat Text", sans-serif;
+  letter-spacing: 1px;
+}
+.contact .contact__overlay form label::after {
+  content: " *";
+  color: #F34963;
+}
+.contact .contact__overlay form div {
+  width: 50%;
+  margin: 15px auto;
+}
+.contact .contact__overlay form div input {
+  border: 2px solid #b8b7b7;
+  width: 100%;
+  background: transparent;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 0px;
+}
+.contact .contact__overlay form input[type=submit] {
+  border: 3px solid #F34963;
+  background: #F34963;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-family: "Fredoka One", cursive;
+  font-weight: 150;
+  letter-spacing: 1px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: 100%;
+}
+.contact .contact__overlay form input[type=submit]:hover {
+  border: 3px solid #F34963;
+  background: transparent;
+  cursor: pointer;
+}
+
+.gallery {
+  padding: 35px;
+}
+.gallery h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.5rem;
+  margin: 25px 0px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+.gallery .gallery__div {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.gallery .gallery__div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .gallery__div li {
+  margin: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .gallery__div li img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  max-width: 100%;
+}
+.footer .footer__top {
+  padding: 15px 60px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40em, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background: #161515;
+  color: #ffffff;
+  min-height: 60vh;
+  text-align: left;
+}
+.footer .footer__top .usefulLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer .footer__top .usefulLinks h4 {
+  font-family: "Red Hat Text", sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 15px 0px;
+  font-weight: bold;
+}
+.footer .footer__top .usefulLinks div a {
+  display: block;
+  font-family: "Red Hat Text", sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 10px 0px;
+  font-weight: 300;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.footer .footer__top .usefulLinks div a:hover {
+  color: #b8b7b7;
+}
+.footer .footer__top .infoDiv {
+  min-height: 175px;
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer .footer__top .infoDiv h4 {
+  font-family: "Red Hat Text", sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 15px 0px;
+  font-weight: bold;
+}
+.footer .footer__top .infoDiv p {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  margin: 5px 0px 20px 0px;
+  font-weight: 100;
+}
+.footer .footer__top .infoDiv .social__links a {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin: 0px 30px 0px 0px;
+}
+.footer .footer__bottom {
+  padding: 15px 60px;
+  background: black;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .footer__bottom p {
+  padding: 15px 60px;
+  font-family: "Red Hat Text", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.footer .footer__bottom p span {
+  font-family: "Permanent Marker", cursive;
+  color: #F34963;
+}
+.footer .footer__bottom p span span {
+  color: #ffffff;
 }
