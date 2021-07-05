@@ -1,0 +1,9 @@
+// @include responsive(900px);
+
+@media screen and (max-width: 1200px) {
+    header {
+        .top-section {
+            background: $primary__color;
+        }
+    }
+}

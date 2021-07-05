@@ -26,7 +26,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
   width: 100%;
   height: 100%;
   overflow: visible;
@@ -105,8 +105,8 @@ header .top-section p {
           align-items: center;
 }
 header .top-section p .emailAdd {
-  border-left: 1px solid red;
-  border-right: 1px solid red;
+  border-left: 1px solid #F34963;
+  border-right: 1px solid #F34963;
 }
 header .top-section p i {
   font-size: 1.4rem;
@@ -177,6 +177,53 @@ header nav .nav__links .quoteGet:hover {
   background: transparent;
   cursor: pointer;
 }
+header nav .menuBars {
+  font-size: 2.4rem;
+  color: #560c88;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  display: none;
+}
+header nav .menuBars:hover {
+  cursor: pointer;
+}
+header .side__nav__links {
+  background: #F34963;
+  padding: 15px 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1500;
+  opacity: 0.97;
+  display: none;
+}
+header .side__nav__links .closeBtn {
+  font-size: 3rem;
+  padding: 5px 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+header .side__nav__links .closeBtn:hover {
+  cursor: pointer;
+}
+header .side__nav__links a {
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ffffff;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 5px 20px;
+  color: #ffffff;
+}
+header .side__nav__links .quoteGet {
+  background: #ffffff;
+  color: #F34963;
+  font-family: "Fredoka One", cursive;
+}
 header .hero__div {
   height: 650px;
   z-index: 0;
@@ -222,6 +269,8 @@ header .hero__div .hero__section .hero__overlay h2 {
   margin-top: 30px;
   font-family: "Fredoka One", cursive;
   font-weight: 90;
+  -webkit-transition: font-size 0.7s;
+  transition: font-size 0.7s;
 }
 header .hero__div .hero__section .hero__overlay .firstPara {
   font-family: "Red Hat Text", sans-serif;
@@ -230,6 +279,8 @@ header .hero__div .hero__section .hero__overlay .firstPara {
   line-height: 1.4em;
   margin: 30px 0px 6px 0px;
   color: #b8b7b7;
+  -webkit-transition: font-size 0.7s;
+  transition: font-size 0.7s;
 }
 header .hero__div .hero__section .hero__overlay .secondPara {
   font-family: "Red Hat Text", sans-serif;
@@ -238,6 +289,8 @@ header .hero__div .hero__section .hero__overlay .secondPara {
   line-height: 1.4em;
   margin: 5px 0px;
   color: #b8b7b7;
+  -webkit-transition: font-size 0.7s;
+  transition: font-size 0.7s;
 }
 header .hero__div .hero__section .hero__overlay a {
   border: 3px solid #F34963;
@@ -284,6 +337,9 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 .product__description .carousel {
   margin: 20px 0px 6px 0px;
+}
+.product__description .carousel .carousel-indicators ol {
+  background: #F34963;
 }
 .product__description .carousel .carousel-indicators ol li {
   background: #F34963;
@@ -699,6 +755,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-size: 1.4rem;
   text-align: center;
   z-index: 500;
+  transition: 0.7s;
+  display: none;
 }
 .page__up__arrow:hover {
   border: 3px solid #F34963;
@@ -709,4 +767,41 @@ header .hero__div .hero__section .hero__overlay a:hover {
   background: transparent;
   color: #F34963;
   border: 3px solid #F34963;
+}
+
+@media (max-width: 768px) {
+  header .top-section {
+    display: none;
+  }
+  header nav {
+    min-height: auto;
+  }
+  header nav .logo {
+    font-size: 2rem;
+  }
+  header nav .nav__links a {
+    display: none;
+  }
+  header nav .menuBars {
+    display: block;
+  }
+  header .hero__div .hero__section .hero__overlay {
+    padding: 40px 7px;
+  }
+  header .hero__div .hero__section .hero__overlay h2 {
+    font-size: 3rem;
+  }
+  header .hero__div .hero__section .hero__overlay .firstPara {
+    font-size: 1.4rem;
+  }
+  header .hero__div .hero__section .hero__overlay .secondPara {
+    font-size: 1.3rem;
+  }
+
+  .product__description {
+    background: yellow;
+  }
+  .product__description h2 {
+    font-size: 2rem;
+  }
 }
