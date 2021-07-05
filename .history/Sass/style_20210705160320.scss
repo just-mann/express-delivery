@@ -189,7 +189,7 @@ header {
             background: url('/images/heroImg.jpg') no-repeat center center / cover;
 
             .hero__overlay {
-               @include overlay__style(0.79);
+               @include overlay__style(0.75);
                padding: 40px 0px;
 
                 h2 {
