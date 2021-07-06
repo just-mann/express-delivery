@@ -500,7 +500,7 @@ header {
     
     .gallery__div {
         @include ClearFix;
-        @include grid(18rem, 1fr);
+        @include grid(22rem, 1fr);
         
         .firstGrid {
             // grid-area: 1 / 3;

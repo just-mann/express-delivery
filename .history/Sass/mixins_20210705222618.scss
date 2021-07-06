@@ -199,7 +199,6 @@
                 .about__card-div {
                     grid-template-columns: 1fr;
                     padding: 15px 0px;
-
                     .myCard {
                         width: 100%;
                         margin: 15px auto;
@@ -221,11 +220,10 @@
                 }
 
                 .gallery__div {
-                    // @include grid(100%, 1fr);
-                    margin: 0 auto;
+                    @include grid(100%, 1fr);
 
                     li {
-                        
+
                         .over__lay {
 
                             h3 {
@@ -279,7 +277,6 @@
 
             // Footer
             .footer {
-                max-width: 100%;
                 .footer__top {
                     padding: 15px 40px;
 

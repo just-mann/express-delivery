@@ -575,7 +575,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
 .gallery .gallery__div {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -857,16 +857,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
     font-size: 2rem;
   }
   .gallery .gallery__div {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     margin: 0 auto;
   }
   .contact {
@@ -894,6 +884,9 @@ header .hero__div .hero__section .hero__overlay a:hover {
     margin: 0 auto;
   }
 
+  .footer {
+    max-width: 100%;
+  }
   .footer .footer__top {
     padding: 15px 40px;
   }
