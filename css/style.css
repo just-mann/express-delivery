@@ -890,6 +890,9 @@ header .hero__div .hero__section .hero__overlay a:hover {
     font-size: 1.5rem;
     margin-top: 30px;
   }
+  .footer .footer__top .infoDiv {
+    margin: 0 0 0 25px;
+  }
   .footer .footer__top .infoDiv h4 {
     font-size: 1.5rem;
     margin-top: 30px;
