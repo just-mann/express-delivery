@@ -573,7 +573,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   display: -ms-grid;
   display: grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -819,6 +819,13 @@ header .hero__div .hero__section .hero__overlay a:hover {
     display: none;
   }
 
+  .aboutUs h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .aboutUs p {
+    font-size: 1.1rem;
+  }
   .aboutUs .about__card-div {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -826,6 +833,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
   }
   .aboutUs .about__card-div .myCard {
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 }
