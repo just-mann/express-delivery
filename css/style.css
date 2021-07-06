@@ -863,7 +863,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
     font-size: 2rem;
   }
   .contact .contact__overlay form {
-    width: 98%;
+    width: 100%;
     padding: 25px 20px;
   }
   .contact .contact__overlay form select {
@@ -875,5 +875,20 @@ header .hero__div .hero__section .hero__overlay a:hover {
   .contact .contact__overlay form div {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .footer .footer__top {
+    padding: 15px 40px;
+  }
+  .footer .footer__top .usefulLinks {
+    padding: 5px 10px;
+  }
+  .footer .footer__top .usefulLinks h4 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  .footer .footer__top .infoDiv h4 {
+    font-size: 1.5rem;
+    margin-top: 30px;
   }
 }
