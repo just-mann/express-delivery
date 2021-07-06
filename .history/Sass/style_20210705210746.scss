@@ -191,7 +191,6 @@ header {
             .hero__overlay {
                @include overlay__style(0.79);
                padding: 40px 10px;
-               text-align: center;
 
                 h2 {
                     font-size: 5rem;
@@ -206,9 +205,8 @@ header {
                     font-size: 1.6rem;
                     font-weight: 150;
                     line-height: 1.4em;
-                    max-width: 600px;
                     margin: 30px 0px 6px 0px;
-                    // padding: 0px 90px;
+                    // padding: 0px 9px;
                     color: $dark__white;
                     transition: font-size 0.7s;
                 }

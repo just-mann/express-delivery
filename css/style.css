@@ -262,7 +262,8 @@ header .hero__div .hero__section .hero__overlay {
           flex-direction: column;
   color: #ffffff;
   text-align: center;
-  padding: 40px 0px;
+  padding: 40px 10px;
+  text-align: center;
 }
 header .hero__div .hero__section .hero__overlay h2 {
   font-size: 5rem;
@@ -277,6 +278,7 @@ header .hero__div .hero__section .hero__overlay .firstPara {
   font-size: 1.6rem;
   font-weight: 150;
   line-height: 1.4em;
+  max-width: 600px;
   margin: 30px 0px 6px 0px;
   color: #b8b7b7;
   -webkit-transition: font-size 0.7s;
@@ -790,10 +792,13 @@ header .hero__div .hero__section .hero__overlay a:hover {
   }
   header .hero__div .hero__section .hero__overlay h2 {
     font-size: 2rem;
+    margin-bottom: 40px;
   }
   header .hero__div .hero__section .hero__overlay .firstPara {
     font-size: 1.2rem;
     padding: 0px 8px;
+    max-width: 400px;
+    margin: 0 auto;
   }
   header .hero__div .hero__section .hero__overlay .secondPara {
     font-size: 1.1rem;
