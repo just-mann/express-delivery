@@ -559,7 +559,7 @@ header {
 
         .usefulLinks {
             @include flex(column, space-between, flex-start);
-            margin: 0 auto;
+            margin: 0 10px;
             
             h4 {
                 font-family: $third__font;
