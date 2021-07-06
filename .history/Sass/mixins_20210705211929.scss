@@ -183,7 +183,6 @@
 
             // About Us
             .aboutUs {
-                padding: 40px 20px;
                 h3 {
                     font-size: 2rem;
                     margin-bottom: 15px;
@@ -191,9 +190,6 @@
 
                 p {
                     font-size: 1.1rem;
-                    max-width: 350px;
-                    text-align: center;
-                    margin: 0 auto;
                 }
 
                 .about__card-div {
@@ -209,12 +205,9 @@
 
             // Contact
             .contact {
-                padding: 0px;
-                // background: yellow;
+
                 .contact__overlay {
                     padding: 20px 0px;
-                    margin: 0 auto;
-                    // background: yellow;
 
                     h3 {
                         font-size: 2rem;
@@ -225,15 +218,6 @@
 
                         select {
                             width: 100%;
-                        }
-
-                        label {
-                            width: 100%;
-                        }
-
-                        div {
-                            width: 100%;
-                            margin: 0 auto;
                         }
                     }
                 }

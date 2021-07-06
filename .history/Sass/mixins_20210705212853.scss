@@ -210,11 +210,9 @@
             // Contact
             .contact {
                 padding: 0px;
-                // background: yellow;
+                    background: yellow;
                 .contact__overlay {
                     padding: 20px 0px;
-                    margin: 0 auto;
-                    // background: yellow;
 
                     h3 {
                         font-size: 2rem;
@@ -233,7 +231,6 @@
 
                         div {
                             width: 100%;
-                            margin: 0 auto;
                         }
                     }
                 }
