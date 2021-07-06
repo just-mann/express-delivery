@@ -627,6 +627,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
 
 .footer {
   max-width: 100%;
+  overflow: hidden;
 }
 .footer .footer__top {
   padding: 15px 60px;
@@ -641,6 +642,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
           align-items: center;
   text-align: center;
   margin: 0 auto;
+  max-width: 100%;
   background: #161515;
   color: #ffffff;
   min-height: 60vh;

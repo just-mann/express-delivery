@@ -546,8 +546,6 @@ header {
 
 .footer {
     max-width: 100%;
-    overflow: hidden;
-
     .footer__top {
         @include my_container;
         @include grid(30em, 1fr);

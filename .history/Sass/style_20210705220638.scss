@@ -546,8 +546,6 @@ header {
 
 .footer {
     max-width: 100%;
-    overflow: hidden;
-
     .footer__top {
         @include my_container;
         @include grid(30em, 1fr);
@@ -595,7 +593,7 @@ header {
 
             h4 {
                 font-family: $third__font;
-                letter-spacing: 2px;
+                // letter-spacing: 2px;
                 font-size: 2rem;
                 margin: 15px 0px;
                 font-weight: bold;
