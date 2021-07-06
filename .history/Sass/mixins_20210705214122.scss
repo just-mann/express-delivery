@@ -217,18 +217,19 @@
             // Contact
             .contact {
                 padding: 0px;
+                background: yellow;
 
                 .contact__overlay {
                     padding: 0px;
                     margin: 0 auto;
+                    background: pink;
 
                     h3 {
                         font-size: 2rem;
                     }
 
                     form {
-                        width: 96%;
-                        padding: 25px 20px;
+                        padding: 25px 0px;
 
                         select {
                             width: 100%;
