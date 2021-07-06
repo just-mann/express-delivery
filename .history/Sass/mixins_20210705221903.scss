@@ -220,22 +220,7 @@
                 }
 
                 .gallery__div {
-                    @include grid(90%, 1fr);
-
-                    li {
-
-                        .over__lay {
-
-                            h3 {
-
-                            }
-                        }
-
-
-                        img {
-                            
-                        }
-                    }
+                    @include grid(100%, 1fr);
                 }
             }
 
