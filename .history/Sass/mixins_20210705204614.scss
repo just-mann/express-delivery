@@ -87,7 +87,7 @@
 @mixin responsive($width){
     @media (max-width: $width) {
         // Mobile Phone Styles
-        @if $width <= 780px {
+        @if $width <= 768px {
             header {
                 .top-section {
                     display: none;
@@ -189,11 +189,9 @@
                 }
 
                 .about__card-div {
-                    grid-template-columns: 1fr;
-                    padding: 15px 0px;
+
                     .myCard {
                         width: 100%;
-                        margin: 0 auto;
                     }
                 }
             }

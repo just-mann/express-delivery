@@ -87,7 +87,7 @@
 @mixin responsive($width){
     @media (max-width: $width) {
         // Mobile Phone Styles
-        @if $width <= 780px {
+        @if $width <= 768px {
             header {
                 .top-section {
                     display: none;
@@ -120,7 +120,7 @@
                         // width: 100%;
     
                         .hero__overlay {
-                            padding: 40px 5px;
+                            padding: 40px 15px;
 
                             h2 {
                                 font-size: 2rem;
@@ -128,7 +128,7 @@
 
                             .firstPara {
                                 font-size: 1.2rem;
-                                padding: 0px 8px;
+                                padding: 0px 20px;
                             }
                             
                             .secondPara {
@@ -139,9 +139,8 @@
                 }
             }
 
-            // Products Description
             .product__description {
-                // background: yellow;
+                background: yellow;
 
                 h2 {
                     font-size: 2rem;
@@ -170,30 +169,10 @@
                             }
 
                             .infoDiv {
-                                display: none;
+                                // display: none;
                             }
 
                         }
-                    }
-                }
-            }
-
-            // About Us
-            .aboutUs {
-                h3 {
-
-                }
-
-                p {
-
-                }
-
-                .about__card-div {
-                    grid-template-columns: 1fr;
-                    padding: 15px 0px;
-                    .myCard {
-                        width: 100%;
-                        margin: 0 auto;
                     }
                 }
             }
