@@ -575,7 +575,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
 .gallery .gallery__div {
   display: -ms-grid;
   display: grid;
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -854,6 +853,9 @@ header .hero__div .hero__section .hero__overlay a:hover {
     margin: 0;
   }
 
+  .gallery h3 {
+    font-size: 2rem;
+  }
   .gallery .gallery__div {
     display: -ms-grid;
     display: grid;
