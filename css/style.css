@@ -859,7 +859,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   .gallery .gallery__div {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(27.5em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
