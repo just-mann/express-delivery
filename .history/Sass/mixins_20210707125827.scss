@@ -95,52 +95,11 @@
             header {
                 .top-section {
                     display: none;
-                    
-                    div {
-                        // padding: 0px 20px;
-
-                        p {
-                            
-                        }
-                    }
                 }
 
-                nav {
+                div {
                     padding: 0px 20px;
-
-                    .logo {
-                        font-size: 1.9rem;
-                    }
-
-                    .nav__links {
-                        display: none;
-                    }
-
-                    .menuBars {
-                        display: block;
-                    }
                 }
-
-                .hero__div {
-                    height: 90vh;
-
-                    .hero__section {
-
-                        .hero__overlay {
-
-                            h2 {
-                                font-size: 3rem;
-                            }
-
-                            .firstPara {
-                                font-size: 20px;
-                                line-height: 35px;
-                            }
-                        }
-                    }
-                }
-
-                
             }
 
 
