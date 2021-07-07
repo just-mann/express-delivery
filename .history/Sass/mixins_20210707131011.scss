@@ -154,7 +154,7 @@
 
                 .servDiv {
                     width: 100%;
-                    padding: 0px 15px;
+                    padding: 0px 20px;
                     
                     .servCard {
                         width: 100%;
@@ -185,42 +185,6 @@
                         }
                     }
                     
-                }
-            }
-
-
-            // Contact
-            .contact {
-
-                .contact__overlay {
-                    padding: 0px 15px;
-
-                    h3 {
-
-                    }
-
-                    form {
-                        width: 100%;
-                        padding: 15px 0px;
-
-                        select {
-                            width: 100%;
-                            // padding: 0px;
-                        }
-
-                        label {
-                            width: 100%;
-                            margin: 25px 0px 0px 0px;
-                        }
-
-                        div {
-                            width: 100%;
-                        }
-
-                        input[type="submit"] {
-                            width: 100%;
-                        }
-                    }
                 }
             }
         }
