@@ -1,0 +1,38 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@300&family=Fredoka+One&family=Permanent+Marker&family=Red+Hat+Text:wght@300&family=Roboto:wght@100&family=Sacramento&display=swap');
+
+// Barlow Font ===> Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+
+
+// Styles for items like buttons, links, lists, and colors, fonts, etc..
+
+// Variables
+$primary__color: #F34963;
+$secondary__color: #560c88;
+$light__white: #ffffff;
+$dark__white: #b8b7b7;
+$primary__font: 'Permanent Marker', cursive;
+$secondary__font: 'Barlow', sans-serif;
+$third__font: 'Red Hat Text', sans-serif;
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+

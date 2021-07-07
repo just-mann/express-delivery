@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@300&family=Fredoka+One&family=Permanent+Marker&family=Red+Hat+Text:wght@300&family=Roboto:wght@100&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -30,7 +31,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: rgba(28, 28, 28, 0.884);
+  background: rgba(28, 28, 28, 0.89);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,9 +68,13 @@ body {
 }
 
 header .top-section {
-  padding: 15px 60px;
   background: #560c88;
   color: #ffffff;
+}
+header .top-section div {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +86,7 @@ header .top-section {
           align-items: center;
   height: 45px;
 }
-header .top-section p {
+header .top-section div p {
   font-family: "Red Hat Text", sans-serif;
   font-size: 0.87rem;
   font-weight: bold;
@@ -104,26 +109,28 @@ header .top-section p {
       -ms-flex-align: center;
           align-items: center;
 }
-header .top-section p .emailAdd {
+header .top-section div p .emailAdd {
   border-left: 1px solid #F34963;
   border-right: 1px solid #F34963;
 }
-header .top-section p i {
+header .top-section div p i {
   font-size: 1.4rem;
   -webkit-transition: 0.7s;
   transition: 0.7s;
   margin-right: 3px;
 }
-header .top-section p:hover {
+header .top-section div p:hover {
   color: #ffffff;
 }
-header .top-section p:hover i {
+header .top-section div p:hover i {
   color: #F34963;
 }
 header nav {
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 15px 60px;
   width: 100%;
-  height: 95px;
+  height: 70px;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +159,7 @@ header nav .nav__links a {
   margin: 0 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -165,7 +172,7 @@ header nav .nav__links .quoteGet {
   background: #F34963;
   color: #ffffff;
   padding: 10px 15px;
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 1px;
   -webkit-transition: 0.7s;
@@ -222,7 +229,7 @@ header .side__nav__links a {
 header .side__nav__links .quoteGet {
   background: #ffffff;
   color: #F34963;
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
 }
 header .hero__div {
   height: 650px;
@@ -243,7 +250,7 @@ header .hero__div .hero__section {
   background: url("/images/heroImg.jpg") no-repeat center center/cover;
 }
 header .hero__div .hero__section .hero__overlay {
-  background: rgba(0, 0, 0, 0.79);
+  background: rgba(0, 0, 0, 0.84);
   height: 100%;
   width: 100%;
   padding: 25px;
@@ -262,34 +269,20 @@ header .hero__div .hero__section .hero__overlay {
           flex-direction: column;
   color: #ffffff;
   text-align: center;
-  padding: 40px 10px;
   text-align: center;
 }
 header .hero__div .hero__section .hero__overlay h2 {
   font-size: 5rem;
-  margin-top: 30px;
-  font-family: "Fredoka One", cursive;
-  font-weight: 90;
+  font-family: "Barlow";
   -webkit-transition: font-size 0.7s;
   transition: font-size 0.7s;
 }
 header .hero__div .hero__section .hero__overlay .firstPara {
   font-family: "Red Hat Text", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 150;
-  line-height: 1.4em;
-  max-width: 600px;
-  margin: 30px 0px 6px 0px;
-  color: #b8b7b7;
-  -webkit-transition: font-size 0.7s;
-  transition: font-size 0.7s;
-}
-header .hero__div .hero__section .hero__overlay .secondPara {
-  font-family: "Red Hat Text", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 150;
-  line-height: 1.4em;
-  margin: 5px 0px;
+  font-size: 25px;
+  line-height: 35px;
+  max-width: 750px;
+  margin: 18px 0px 0px 0px;
   color: #b8b7b7;
   -webkit-transition: font-size 0.7s;
   transition: font-size 0.7s;
@@ -299,13 +292,13 @@ header .hero__div .hero__section .hero__overlay a {
   background: #F34963;
   color: #ffffff;
   padding: 10px 15px;
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 1px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
   text-decoration: none;
-  margin: 80px 0px 5px 0px;
+  margin: 48px 0px 0px 0px;
 }
 header .hero__div .hero__section .hero__overlay a:hover {
   border: 3px solid #F34963;
@@ -314,59 +307,18 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 
 .product__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: url("/images/about_bg.jpg") no-repeat center center/cover;
-  padding: 40px 0px;
-  min-height: 450px;
+  min-height: 100vh;
+  padding: 55px 0px;
   text-align: center;
 }
-.product__description h2 {
-  font-family: "Fredoka One", cursive;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
+.product__description h1 {
+  font-family: "Barlow";
 }
-.product__description .carousel {
-  margin: 20px 0px 6px 0px;
-}
-.product__description .carousel .carousel-indicators ol {
-  background: #F34963;
-}
-.product__description .carousel .carousel-indicators ol li {
-  background: #F34963;
-}
-.product__description .carousel .carousel-item {
-  height: 500px;
-}
-.product__description .carousel .carousel-item .product__div {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.product__description .carousel .carousel-item .product__div .imgDiv img {
-  height: 400px;
-  width: 500px;
-}
-.product__description .carousel .carousel-item .product__div .infoDiv {
+.product__description .servDiv {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,34 +329,91 @@ header .hero__div .hero__section .hero__overlay a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product__description .servDiv .servCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  height: 300px;
+}
+.product__description .servDiv .servCard .detDiv {
+  width: 50%;
+  text-align: left;
+  padding: 0px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 5px 25px;
-  background: #F34963;
-  max-width: 250px;
-  height: 90%;
-  text-align: left;
 }
-.product__description .carousel .carousel-item .product__div .infoDiv p {
+.product__description .servDiv .servCard .detDiv h3 {
+  font-family: "Barlow";
+  font-size: 2rem;
+}
+.product__description .servDiv .servCard .detDiv p {
   font-family: "Red Hat Text", sans-serif;
-  font-size: 1.2rem;
+  font-size: 19px;
+  margin: 10px 0px 0px 0px;
+  opacity: 0.65;
 }
-.product__description .carousel .carousel-item .product__div .infoDiv a {
-  border: 3px solid #ffffff;
-  text-decoration: none;
-  background: #ffffff;
-  color: #560c88;
-  font-weight: bold;
-  padding: 8px 20px;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  margin: 20px 0px 5px 0px;
-}
-.product__description .carousel .carousel-item .product__div .infoDiv a:hover {
-  border: 3px solid #ffffff;
-  background: transparent;
+.product__description .servDiv .servCard .detDiv a {
+  border: 3px solid #F34963;
+  background: #F34963;
   color: #ffffff;
+  padding: 10px 15px;
+  font-family: "Barlow";
+  font-weight: 150;
+  letter-spacing: 1px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  text-decoration: none;
+  opacity: 0.75;
+  margin: 18px 0px 0px 0px;
+}
+.product__description .servDiv .servCard .detDiv a:hover {
+  border: 3px solid #F34963;
+  background: transparent;
+  cursor: pointer;
+}
+.product__description .servDiv .servCard .detDiv a:hover {
+  opacity: 0.8;
+  background: transparent;
+  color: #F34963;
+}
+.product__description .servDiv .servCard .imgDiv {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.product__description .servDiv .servCard .imgDiv img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .aboutUs {
@@ -416,7 +425,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   background: #f8f5f5;
 }
 .aboutUs h3 {
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-size: 2.5rem;
   letter-spacing: 1px;
   margin: 30px 0px 10px 0px;
@@ -487,7 +496,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   padding: 80px 35px;
 }
 .contact .contact__overlay h3 {
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-size: 2.5rem;
   letter-spacing: 2.5px;
   margin-top: 30px;
@@ -543,7 +552,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   background: #F34963;
   color: #ffffff;
   padding: 10px 15px;
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 1px;
   -webkit-transition: 0.7s;
@@ -566,7 +575,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   background: url("/images/gallery_bg.jpg") no-repeat center center/cover;
 }
 .gallery h3 {
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-size: 2.5rem;
   margin: 25px 0px;
   text-align: center;
@@ -628,6 +637,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
   max-width: 100%;
 }
 .footer .footer__top {
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 15px 60px;
   display: -ms-grid;
   display: grid;
@@ -721,22 +732,40 @@ header .hero__div .hero__section .hero__overlay a:hover {
   margin: 0px 30px 0px 0px;
 }
 .footer .footer__bottom {
-  padding: 15px 60px;
   background: black;
   color: #ffffff;
   text-align: center;
+  padding: 15px 0px;
 }
-.footer .footer__bottom p {
+.footer .footer__bottom div {
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 15px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer__bottom div p {
+  font-size: 1.2rem;
   font-family: "Red Hat Text", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   text-align: center;
 }
-.footer .footer__bottom p span {
+.footer .footer__bottom div p span {
   font-family: "Permanent Marker", cursive;
   color: #F34963;
 }
-.footer .footer__bottom p span span {
+.footer .footer__bottom div p span span {
   color: #ffffff;
 }
 
@@ -745,7 +774,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   background: #F34963;
   color: #ffffff;
   padding: 10px 15px;
-  font-family: "Fredoka One", cursive;
+  font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 1px;
   -webkit-transition: 0.7s;
@@ -772,136 +801,46 @@ header .hero__div .hero__section .hero__overlay a:hover {
   border: 3px solid #F34963;
 }
 
-@media (max-width: 780px) {
-  header .top-section {
-    display: none;
+@media (max-width: 800px) {
+  .product__description {
+    height: auto;
   }
-  header nav {
-    min-height: auto;
+  .product__description .servDiv {
+    width: 100%;
+    padding: 0px 20px;
   }
-  header nav .logo {
-    font-size: 2rem;
-  }
-  header nav .nav__links a {
-    display: none;
-  }
-  header nav .menuBars {
-    display: block;
-  }
-  header .hero__div .hero__section .hero__overlay {
-    padding: 40px 5px;
-  }
-  header .hero__div .hero__section .hero__overlay h2 {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-  }
-  header .hero__div .hero__section .hero__overlay .firstPara {
-    font-size: 1.2rem;
-    padding: 0px 8px;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  header .hero__div .hero__section .hero__overlay .secondPara {
-    font-size: 1.1rem;
-  }
-
-  .product__description h2 {
-    font-size: 2rem;
-  }
-  .product__description .carousel .carousel-item {
-    height: 100%;
-  }
-  .product__description .carousel .carousel-item .product__div {
+  .product__description .servDiv .servCard {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .product__description .carousel .carousel-item .product__div .imgDiv img {
-    width: 90%;
-    height: 90%;
-  }
-  .product__description .carousel .carousel-item .product__div .infoDiv {
-    display: none;
-  }
-
-  .aboutUs {
-    padding: 40px 20px;
-  }
-  .aboutUs h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  .aboutUs p {
-    font-size: 1.2rem;
-    max-width: 350px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .aboutUs .about__card-div {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    padding: 15px 0px;
-  }
-  .aboutUs .about__card-div .myCard {
+  .product__description .servDiv .servCard .detDiv {
     width: 100%;
-    margin: 15px auto;
+    padding: 0px 0px 0px 0px;
   }
-  .aboutUs .about__card-div .myCard div p {
-    text-align: left;
-    margin: 0;
+  .product__description .servDiv .servCard .detDiv h3 {
+    margin: 15px 0px 10px 0px;
   }
-
-  .gallery h3 {
-    font-size: 2rem;
+  .product__description .servDiv .servCard .order {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  .gallery .gallery__div {
-    margin: 0 auto;
-  }
-  .contact {
-    padding: 0px;
-  }
-  .contact .contact__overlay {
-    padding: 0px;
-    margin: 0 auto;
-  }
-  .contact .contact__overlay h3 {
-    font-size: 2rem;
-  }
-  .contact .contact__overlay form {
+  .product__description .servDiv .servCard .imgDiv {
     width: 100%;
-    padding: 25px 20px;
-  }
-  .contact .contact__overlay form select {
-    width: 100%;
-  }
-  .contact .contact__overlay form label {
-    width: 100%;
-  }
-  .contact .contact__overlay form div {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .footer {
-    max-width: 100%;
-  }
-  .footer .footer__top {
-    padding: 15px 40px;
-  }
-  .footer .footer__top .usefulLinks {
-    padding: 5px 10px;
-    margin: 0px 0px 0px 45px;
-  }
-  .footer .footer__top .usefulLinks h4 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-  }
-  .footer .footer__top .infoDiv {
-    margin: 0px 0px 0px 45px;
-  }
-  .footer .footer__top .infoDiv h4 {
-    font-size: 1.5rem;
-    margin-top: 30px;
+    height: 100%;
+    margin: 20px 0px 0px 0px;
   }
 }
