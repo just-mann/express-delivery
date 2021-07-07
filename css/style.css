@@ -683,16 +683,19 @@ header .hero__div .hero__section .hero__overlay a:hover {
 .footer .footer__top .usefulLinks div a {
   display: block;
   font-family: "Red Hat Text", sans-serif;
+  color: #b8b7b7;
   color: #ffffff;
   font-size: 1.2rem;
   margin: 10px 0px;
   font-weight: 300;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.65;
   text-decoration: none;
 }
 .footer .footer__top .usefulLinks div a:hover {
-  color: #b8b7b7;
+  color: #ffffff;
+  opacity: 1;
 }
 .footer .footer__top .infoDiv {
   min-height: 175px;
@@ -721,10 +724,12 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 .footer .footer__top .infoDiv p {
   font-family: "Red Hat Text", sans-serif;
+  color: #b8b7b7;
   font-size: 1.2rem;
   letter-spacing: 0.8px;
   margin: 5px 0px 20px 0px;
   font-weight: 100;
+  opacity: 0.65;
 }
 .footer .footer__top .infoDiv .social__links a {
   color: #ffffff;
@@ -892,5 +897,31 @@ header .hero__div .hero__section .hero__overlay a:hover {
   }
   .contact .contact__overlay form input[type=submit] {
     width: 100%;
+  }
+
+  .footer .footer__top {
+    padding: 0px 15px;
+  }
+  .footer .footer__top .usefulLinks {
+    margin: 10px 0px;
+  }
+  .footer .footer__top .usefulLinks h4 {
+    font-size: 1.7rem;
+  }
+  .footer .footer__top .usefulLinks div a {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .footer .footer__top .infoDiv {
+    padding: 15px 0px;
+    margin: 15px 0px;
+  }
+  .footer .footer__top .infoDiv h4 {
+    font-size: 1.7rem;
+    font-weight: 100;
+  }
+  .footer .footer__top .infoDiv p {
+    font-size: 1rem;
+    font-weight: 100;
   }
 }

@@ -542,18 +542,15 @@ header {
                 a {
                     display: block;
                     font-family: $third__font;
-                    color: $dark__white;
                     color: $light__white;
                     font-size: 1.2rem;
                     margin: 10px 0px;
                     font-weight: 300;
-                    transition: 0.5s;
-                    opacity: 0.65;
+                    transition: 0.7s;
                     text-decoration: none;
 
                     &:hover {
-                        color: $light__white;
-                        opacity: 1;
+                        color: $dark__white;
                     }
                 }
             }

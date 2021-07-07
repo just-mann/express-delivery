@@ -547,13 +547,12 @@ header {
                     font-size: 1.2rem;
                     margin: 10px 0px;
                     font-weight: 300;
-                    transition: 0.5s;
+                    transition: 0.7s;
                     opacity: 0.65;
                     text-decoration: none;
 
                     &:hover {
-                        color: $light__white;
-                        opacity: 1;
+                        color: $dark__white;
                     }
                 }
             }
