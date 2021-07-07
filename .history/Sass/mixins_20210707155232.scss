@@ -145,31 +145,17 @@
 
             // About Us
             .aboutUs {
-                height: auto;
+                
 
                 h1 {
                     text-align: center;
                 }
                
-                p {
-                    
-                }
-
-
-                .about__div {
-                    padding: 0px 15px;
-                    
-
-                    .cardDiv {
-                        @include flex(column, center, center);
-                        // padding: 0px 15px;
-                        // text-align: left;
-
-                        .imgDiv {
-                            // overflow: hidden;
-                        }
-                    }
-                }
+                // p {
+                //     text-align: center;
+                //     width: 700px;
+                //     margin: 0 auto;
+                // }
             }
 
 

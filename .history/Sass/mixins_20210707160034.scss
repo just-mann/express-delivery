@@ -162,8 +162,8 @@
 
                     .cardDiv {
                         @include flex(column, center, center);
-                        // padding: 0px 15px;
-                        // text-align: left;
+                        padding: 0px 15px;
+                        text-align: left;
 
                         .imgDiv {
                             // overflow: hidden;

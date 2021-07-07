@@ -145,28 +145,42 @@
 
             // About Us
             .aboutUs {
+                padding: 30px 15px;
                 height: auto;
 
                 h1 {
-                    text-align: center;
-                }
-               
-                p {
-                    
+                    font-size: 1.2rem;
+                    text-align: left;
                 }
 
+                p {
+                    font-size: 17px;
+                    text-align: left;
+                    margin-bottom: 50px;
+                }
 
                 .about__div {
-                    padding: 0px 15px;
-                    
+                    padding: 15px 0px;
+                    height: auto;
 
                     .cardDiv {
                         @include flex(column, center, center);
-                        // padding: 0px 15px;
-                        // text-align: left;
 
                         .imgDiv {
-                            // overflow: hidden;
+                            height: auto;
+                            width: 100%;
+                            margin: 40px 0px 10px 0px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .desDiv {
+                            width: 100%;
+                            text-align: left;
+                            padding: 15px 0px;
                         }
                     }
                 }
@@ -177,10 +191,9 @@
             // Services
             .product__description {
                 height: auto;
-                
+
                 h1 {
-                    // padding: 0px 15px;
-                    text-align: center;
+
                 }
 
                 .servDiv {
