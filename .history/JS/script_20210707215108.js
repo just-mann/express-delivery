@@ -57,7 +57,7 @@ $(() => {
     $('.page__up__arrow').on('click', () => {
         $('html, body').animate({
             scrollTop: $('#top').offset().top
-        }, 600)
+        }, 500)
     });
     
 
