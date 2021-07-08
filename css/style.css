@@ -1259,25 +1259,4 @@ header .hero__div .hero__section .hero__overlay a:hover {
     color: #ffffff;
     text-decoration: none;
   }
-  .footer .top__section .usefulLinks .socialDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer .top__section .usefulLinks .socialDiv a {
-    margin: 10px 10px 0px 0px;
-    font-size: 1rem;
-    height: 15px;
-    width: 15px;
-  }
 }
