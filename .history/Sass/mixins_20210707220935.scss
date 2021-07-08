@@ -285,79 +285,49 @@
 
             // About Us
             .aboutUs {
-                min-height: 100vh;
-                padding: 55px 0px;
-                text-align: center;
-                
+                min-height: auto;
+
                 h1 {
-                    font-family: $secondary__font;
-                    margin: 15px 0px 20px 0px;
+                    // font-size: 3rem;
+                    text-align: center;
                 }
 
-                .par {
-                    font-size: 1.4rem;
-                    width: 700px;
-                    margin: 0 auto;
-                    margin-bottom: 15px;
+                p {
+                    font-size: 1.3rem;
+                    width: 800px;
+                    margin: 15px auto;
                 }
-                
+
                 .about__div {
                     @include my_container;
-                    @include flex(column, center, center);
+                    text-align: center;
+                    // min-height: 550px;
+                    background: yellow;
+                    margin: 0 auto;
                     
                     .cardDiv {
-                        @include flex(row, space-between, center);
-                        width: 1000px;
-                        height: 400px;
-
+                        @include flex(row, center, center);
+                        margin: 0 auto;
+                        padding: 0px;
+                        background: green;
+                        
 
                         .imgDiv {
                             width: 60%;
-                            height: 100%;
-                            object-fit: cover;
-                            position: relative;
+                            min-height: 100%;
 
                             img {
-                                object-fit: cover;
                                 width: 100%;
                                 height: 100%;
                             }
-
-                            
                         }
-                        
-                        .desDiv {
+
+                        .detDiv {
                             width: 40%;
-                            text-align: left;
-                            padding: 20px 40px;
-                            @include flex(column, space-between, flex-start);
-
-                            h2 {
-                                font-family: $secondary__font;
-                                font-size: 1.7rem;
-                            }
-
-                            p {
-                                font-family: $third__font;
-                                font-size: 1.1rem;
-                                margin: 0px 0px 15px 0px;
-                                opacity: 0.6;
-                            }
-
-                            a {
-                                @include btn_style;
-                                opacity: 0.75;
-                                margin: 18px 0px 0px 0px;
-
-                                &:hover {
-                                    opacity: 0.8;
-                                    background: transparent;
-                                    color: $primary__color;
-                                }
-                            }
                         }
                     }
                 }
+
             }
         }
     }

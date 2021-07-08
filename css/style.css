@@ -871,3 +871,120 @@ header .hero__div .hero__section .hero__overlay a:hover {
     right: 15px;
   }
 }
+@media (min-width: 900px) {
+  .aboutUs {
+    min-height: 100vh;
+    padding: 55px 0px;
+    text-align: center;
+  }
+  .aboutUs h1 {
+    font-family: "Barlow";
+    margin: 15px 0px 20px 0px;
+  }
+  .aboutUs .par {
+    font-size: 1.4rem;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .aboutUs .about__div {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 15px 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutUs .about__div .cardDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1000px;
+    height: 400px;
+  }
+  .aboutUs .about__div .cardDiv .imgDiv {
+    width: 60%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  .aboutUs .about__div .cardDiv .imgDiv img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .aboutUs .about__div .cardDiv .desDiv {
+    width: 40%;
+    text-align: left;
+    padding: 20px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutUs .about__div .cardDiv .desDiv h2 {
+    font-family: "Barlow";
+    font-size: 1.7rem;
+  }
+  .aboutUs .about__div .cardDiv .desDiv p {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 1.1rem;
+    margin: 0px 0px 15px 0px;
+    opacity: 0.6;
+  }
+  .aboutUs .about__div .cardDiv .desDiv a {
+    border: 3px solid #F34963;
+    background: #F34963;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-family: "Barlow";
+    font-weight: 150;
+    letter-spacing: 1px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    text-decoration: none;
+    opacity: 0.75;
+    margin: 18px 0px 0px 0px;
+  }
+  .aboutUs .about__div .cardDiv .desDiv a:hover {
+    border: 3px solid #F34963;
+    background: transparent;
+    cursor: pointer;
+  }
+  .aboutUs .about__div .cardDiv .desDiv a:hover {
+    opacity: 0.8;
+    background: transparent;
+    color: #F34963;
+  }
+}

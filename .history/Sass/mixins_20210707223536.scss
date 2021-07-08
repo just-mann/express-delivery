@@ -294,11 +294,8 @@
                     margin: 15px 0px 20px 0px;
                 }
 
-                .par {
+                p {
                     font-size: 1.4rem;
-                    width: 700px;
-                    margin: 0 auto;
-                    margin-bottom: 15px;
                 }
                 
                 .about__div {
@@ -310,6 +307,36 @@
                         width: 1000px;
                         height: 400px;
 
+                        .desDiv {
+                            width: 40%;
+                            text-align: left;
+                            padding: 0px 40px;
+                            @include flex(column, space-between, flex-start);
+
+                            h3 {
+                                font-family: $secondary__font;
+                                font-size: 2rem;
+                            }
+
+                            p {
+                                font-family: $third__font;
+                                font-size: 19px;
+                                margin: 10px 0px 0px 0px;
+                                opacity: 0.68;
+                            }
+
+                            a {
+                                @include btn_style;
+                                opacity: 0.75;
+                                margin: 18px 0px 0px 0px;
+
+                                &:hover {
+                                    opacity: 0.8;
+                                    background: transparent;
+                                    color: $primary__color;
+                                }
+                            }
+                        }
 
                         .imgDiv {
                             width: 60%;
@@ -324,37 +351,6 @@
                             }
 
                             
-                        }
-                        
-                        .desDiv {
-                            width: 40%;
-                            text-align: left;
-                            padding: 20px 40px;
-                            @include flex(column, space-between, flex-start);
-
-                            h2 {
-                                font-family: $secondary__font;
-                                font-size: 1.7rem;
-                            }
-
-                            p {
-                                font-family: $third__font;
-                                font-size: 1.1rem;
-                                margin: 0px 0px 15px 0px;
-                                opacity: 0.6;
-                            }
-
-                            a {
-                                @include btn_style;
-                                opacity: 0.75;
-                                margin: 18px 0px 0px 0px;
-
-                                &:hover {
-                                    opacity: 0.8;
-                                    background: transparent;
-                                    color: $primary__color;
-                                }
-                            }
                         }
                     }
                 }
