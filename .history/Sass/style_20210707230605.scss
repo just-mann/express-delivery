@@ -357,23 +357,22 @@ header {
 
 // Get a Quote
 .contact {
+    @include my_container;
     @include bgImage(container__contact);
     min-height: 90vh;
     
     .contact__overlay {
         @include overlay__style(0.87);
-        // padding: 80px 35px;
-        
+        padding: 80px 35px;
+
         h3 {
             font-family: $secondary__font;
             font-size: 2.5rem;
             letter-spacing: 2.5px;
             margin-top: 30px;
         }
-        
+
         form {
-            // @include my_container;
-            // background: rgb(73, 73, 52);
             width: 70%;
             height: 70%;
             padding: 25px;
@@ -381,8 +380,7 @@ header {
 
             select {
                 @include border(2px, $dark__white);
-                // width: 100%;
-                // float: left;
+                width: 50%;
                 padding: 8px 15px;
                 background: transparent;
                 font-family: $third__font;
@@ -411,21 +409,21 @@ header {
                     color: $primary__color;
                 }
             }
-           
 
-            input {
-                @include border(2px, $dark__white);
-                width: 100%;
-                background: transparent;
-                color: $light__white;
-                padding: 8px 15px;
-                border-radius: 0px;
-                font-size: 1.2rem;
+            div {
+                width: 50%;
+                margin: 15px auto;
+
+                input {
+                    @include border(2px, $dark__white);
+                    width: 100%;
+                    background: transparent;
+                    color: $light__white;
+                    padding: 8px 15px;
+                    border-radius: 0px;
+                    font-size: 1.2rem;
+                }
             }
-
-            
-
-
 
             input[type="submit"] {
                 @include btn_style;
@@ -434,16 +432,6 @@ header {
                 font-weight: 150;
                 letter-spacing: 1px;
                 margin-top: 30px ;
-            }
-
-            textarea {
-                @include border(2px, $dark__white);
-                width: 100%;
-                padding: 8px 15px;
-                background: transparent;
-                color: $light__white;
-                font-size: 1.2rem;
-                font-weight: 150;
             }
 
             

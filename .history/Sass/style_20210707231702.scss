@@ -373,7 +373,7 @@ header {
         
         form {
             // @include my_container;
-            // background: rgb(73, 73, 52);
+            background: rgb(73, 73, 52);
             width: 70%;
             height: 70%;
             padding: 25px;
@@ -381,8 +381,8 @@ header {
 
             select {
                 @include border(2px, $dark__white);
-                // width: 100%;
-                // float: left;
+                width: 40%;
+                float: left;
                 padding: 8px 15px;
                 background: transparent;
                 font-family: $third__font;
@@ -411,19 +411,25 @@ header {
                     color: $primary__color;
                 }
             }
-           
 
-            input {
-                @include border(2px, $dark__white);
-                width: 100%;
-                background: transparent;
-                color: $light__white;
-                padding: 8px 15px;
-                border-radius: 0px;
-                font-size: 1.2rem;
+            div {
+                width: 50%;
+                margin: 15px auto;
+
+                input {
+                    @include border(2px, $dark__white);
+                    width: 100%;
+                    background: transparent;
+                    color: $light__white;
+                    padding: 8px 15px;
+                    border-radius: 0px;
+                    font-size: 1.2rem;
+                }
             }
 
-            
+            .lengthDiv {
+                
+            }
 
 
 
@@ -434,16 +440,6 @@ header {
                 font-weight: 150;
                 letter-spacing: 1px;
                 margin-top: 30px ;
-            }
-
-            textarea {
-                @include border(2px, $dark__white);
-                width: 100%;
-                padding: 8px 15px;
-                background: transparent;
-                color: $light__white;
-                font-size: 1.2rem;
-                font-weight: 150;
             }
 
             

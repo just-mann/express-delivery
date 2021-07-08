@@ -487,7 +487,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
           flex-direction: column;
   color: #ffffff;
   text-align: center;
-  padding: 80px 35px;
 }
 .contact .contact__overlay h3 {
   font-family: "Barlow";
@@ -502,7 +501,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 .contact .contact__overlay form select {
   border: 2px solid #b8b7b7;
-  width: 50%;
   padding: 8px 15px;
   background: transparent;
   font-family: "Red Hat Text", sans-serif;
@@ -528,11 +526,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   content: " *";
   color: #F34963;
 }
-.contact .contact__overlay form div {
-  width: 50%;
-  margin: 15px auto;
-}
-.contact .contact__overlay form div input {
+.contact .contact__overlay form input {
   border: 2px solid #b8b7b7;
   width: 100%;
   background: transparent;
@@ -562,6 +556,15 @@ header .hero__div .hero__section .hero__overlay a:hover {
   border: 3px solid #F34963;
   background: transparent;
   cursor: pointer;
+}
+.contact .contact__overlay form textarea {
+  border: 2px solid #b8b7b7;
+  width: 100%;
+  padding: 8px 15px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 150;
 }
 
 .gallery {

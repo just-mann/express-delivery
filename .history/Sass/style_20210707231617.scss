@@ -361,94 +361,12 @@ header {
     min-height: 90vh;
     
     .contact__overlay {
+        @include my_container;
         @include overlay__style(0.87);
+        height: 100%;
         // padding: 80px 35px;
         
-        h3 {
-            font-family: $secondary__font;
-            font-size: 2.5rem;
-            letter-spacing: 2.5px;
-            margin-top: 30px;
-        }
         
-        form {
-            // @include my_container;
-            // background: rgb(73, 73, 52);
-            width: 70%;
-            height: 70%;
-            padding: 25px;
-            // background: yellow;
-
-            select {
-                @include border(2px, $dark__white);
-                // width: 100%;
-                // float: left;
-                padding: 8px 15px;
-                background: transparent;
-                font-family: $third__font;
-                color: $light__white;
-                border-radius: 0px;
-                font-size: 1.2rem;
-
-                option {
-                    padding: 10px;
-                    color: #000000;
-                    font-size: 1.2rem;
-                }
-            }
-
-            label {
-                display: block;
-                margin: 25px 0px 5px 0px;
-                width: 50%;
-                text-align: left;
-                font-size: 1.2rem;
-                font-family: $third__font;
-                letter-spacing: 1px;
-
-                &::after {
-                    content: " *";
-                    color: $primary__color;
-                }
-            }
-           
-
-            input {
-                @include border(2px, $dark__white);
-                width: 100%;
-                background: transparent;
-                color: $light__white;
-                padding: 8px 15px;
-                border-radius: 0px;
-                font-size: 1.2rem;
-            }
-
-            
-
-
-
-            input[type="submit"] {
-                @include btn_style;
-                width: 100%;
-                font-size: 1.2rem;
-                font-weight: 150;
-                letter-spacing: 1px;
-                margin-top: 30px ;
-            }
-
-            textarea {
-                @include border(2px, $dark__white);
-                width: 100%;
-                padding: 8px 15px;
-                background: transparent;
-                color: $light__white;
-                font-size: 1.2rem;
-                font-weight: 150;
-            }
-
-            
-            
-        }
     }
 
 }
