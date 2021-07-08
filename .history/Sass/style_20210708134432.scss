@@ -192,7 +192,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764742/containersSunRise_fhtihf.webp') no-repeat center center / cover;
+            background: url('/images/heroImg.jpg') no-repeat center center / cover;
             
             .hero__overlay {
                 // @include my_container;
@@ -226,7 +226,7 @@ header {
 
 // Services description
 .product__description {
-    @include bgImage('https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764735/about_bg_ygkgzo.webp');
+    @include bgImage('https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764703/heroImg_cbprmo.webp');
     min-height: 100vh;
     padding: 55px 0px;
     text-align: center;
@@ -361,7 +361,7 @@ header {
 
 // Get a Quote
 .contact {
-    @include bgImage('https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764731/container__contact_fq7ehn.webp');
+    @include bgImage(container__contact);
     min-height: 90vh;
     
     .contact__overlay {
@@ -469,7 +469,7 @@ header {
 
 .gallery {
     @include my_container;
-    @include bgImage('https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764737/gallery_bg_kwelbq.webp');
+    @include bgImage(gallery_bg);
     
     h3 {
         font-family: $secondary__font;

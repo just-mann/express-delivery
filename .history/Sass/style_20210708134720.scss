@@ -192,7 +192,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764742/containersSunRise_fhtihf.webp') no-repeat center center / cover;
+            background: url('/images/heroImg.jpg') no-repeat center center / cover;
             
             .hero__overlay {
                 // @include my_container;
@@ -469,7 +469,7 @@ header {
 
 .gallery {
     @include my_container;
-    @include bgImage('https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764737/gallery_bg_kwelbq.webp');
+    @include bgImage(gallery_bg);
     
     h3 {
         font-family: $secondary__font;

@@ -32,7 +32,7 @@
 
 // Background Image
 @mixin bgImage($url) {
-    background: url($url) no-repeat center center / cover;
+    background: url('#{$url}') no-repeat center center / cover;
 }
 
 // Overlay Style 

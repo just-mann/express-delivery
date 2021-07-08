@@ -245,7 +245,7 @@ header .hero__div .hero__section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("/images/heroImg.jpg") no-repeat center center/cover;
+  background: url("https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764742/containersSunRise_fhtihf.webp") no-repeat center center/cover;
 }
 header .hero__div .hero__section .hero__overlay {
   background: rgba(0, 0, 0, 0.84);
@@ -305,7 +305,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 
 .product__description {
-  background: url("/images/about_bg.jpg") no-repeat center center/cover;
+  background: url("https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764735/about_bg_ygkgzo.webp") no-repeat center center/cover;
   min-height: 100vh;
   padding: 55px 0px;
   text-align: center;
@@ -461,7 +461,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 
 .contact {
-  background: url("/images/container__contact.jpg") no-repeat center center/cover;
+  background: url("https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764731/container__contact_fq7ehn.webp") no-repeat center center/cover;
   min-height: 90vh;
 }
 .contact .contact__overlay {
@@ -573,7 +573,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   max-width: 1500px;
   margin: 0 auto;
   padding: 15px 60px;
-  background: url("/images/gallery_bg.jpg") no-repeat center center/cover;
+  background: url("https://res.cloudinary.com/expressdelivery/image/upload/q_auto:best/v1625764737/gallery_bg_kwelbq.webp") no-repeat center center/cover;
 }
 .gallery h3 {
   font-family: "Barlow";
