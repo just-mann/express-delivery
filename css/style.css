@@ -678,9 +678,14 @@ header .hero__div .hero__section .hero__overlay a:hover {
   margin-top: 2rem;
 }
 .footer .top__section .usefulLinks a {
+  text-decoration: none;
   color: #b8b7b7;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 5px 0px;
+}
+.footer .top__section .usefulLinks a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .page__up__arrow {
