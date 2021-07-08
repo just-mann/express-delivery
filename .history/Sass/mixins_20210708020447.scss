@@ -238,34 +238,46 @@
                         grid-column: span 3;
 
                         &:nth-child(1) {
+                            min-height: inherit;
                             grid-column: span 3;
                         }
 
                         &:nth-child(2) {
+                            min-height: inherit;
                             grid-column: span 3;
                             // grid-row: span 2;
                         }
                         
                         &:nth-child(3) {
+                            min-height: inherit;
                             grid-column: span 3;
                             // grid-row: span 2;
                         }
                         
                         &:nth-child(4) {
+                            min-height: inherit;
                             grid-column: span 3;
                             // grid-row: span 2;
                         }
                         
                         &:nth-child(5) {
+                            min-height: inherit;
                             grid-column: span 3;
                             // grid-row: span 2;
                         }
-                        
+                        &:nth-child(5) {
+                            grid-column: span 3;
+                            // grid-row: span 2;
+                        }
+                        &:nth-child(6) {
+                            min-height: inherit;
+                            grid-column: span 3;
+                            // grid-row: span 2;
+                        }
                         &:nth-child(6) {
                             grid-column: span 3;
                             // grid-row: span 2;
                         }
-                        
                     }
                 }
             }

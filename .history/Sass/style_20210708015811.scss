@@ -470,6 +470,7 @@ header {
 .gallery {
     @include my_container;
     @include bgImage(gallery_bg);
+    // padding: 35px;
     
     h3 {
         font-family: $secondary__font;
@@ -480,7 +481,8 @@ header {
     }
     
     .gallery__div {
-        max-width: 1100px;
+    @include my_container;
+        max-width: 600px;
         margin: 0 auto;
         background: yellow;
         @include grid(150px, 1fr);
@@ -488,7 +490,6 @@ header {
 
 
         div {
-            @include flex(column, center, center);
             font-size: 5vw;
             padding: .5em;
             min-height: 80px;
@@ -498,20 +499,17 @@ header {
             text-align: center;
             
             &:nth-child(1) {
-                grid-column: span 4;
-                min-height: 450px;
+                grid-column: span 3;
                 // grid-row: span 2;
             }
             
-            &:nth-child(2) {
-                grid-column: span 2;
-                min-height: 450px;
-            }
-            
             &:nth-child(3) {
-                grid-column: span 3;
+                grid-column: span 2;
             }
             
+            &:nth-child(4) {
+                // grid-column: span 2;
+            }
         }
 
         

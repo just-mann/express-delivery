@@ -408,15 +408,14 @@ header .hero__div .hero__section .hero__overlay a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
 }
 .product__description .servDiv .servCard .imgDiv img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
-
 .aboutUs {
   padding: 30px 0px;
   height: auto;
@@ -552,7 +551,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-weight: 150;
   letter-spacing: 1px;
   margin-top: 30px;
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .contact .contact__overlay form input[type=submit]:hover {
   border: 3px solid #F34963;
@@ -560,7 +559,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   cursor: pointer;
 }
 .contact .contact__overlay form input[type=submit]:hover {
-  opacity: 0.85;
+  opacity: 0.8;
 }
 .contact .contact__overlay form textarea {
   border: 2px solid #b8b7b7;
@@ -573,7 +572,9 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 
 .gallery {
-  padding: 35px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 60px;
   background: url("/images/gallery_bg.jpg") no-repeat center center/cover;
 }
 .gallery h3 {
@@ -584,9 +585,13 @@ header .hero__div .hero__section .hero__overlay a:hover {
   letter-spacing: 2.5px;
 }
 .gallery .gallery__div {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: yellow;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -596,43 +601,41 @@ header .hero__div .hero__section .hero__overlay a:hover {
   text-align: center;
   margin: 0 auto;
 }
-.gallery .gallery__div:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.gallery .gallery__div li {
-  margin: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-}
-.gallery .gallery__div li .over__lay {
-  background: rgba(243, 73, 99, 0.836);
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.gallery .gallery__div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  visibility: hidden;
+  font-size: 5vw;
+  padding: 0.5em;
+  min-height: 80px;
+  min-width: 80px;
+  background: #F34963;
+  color: #ffffff;
+  text-align: center;
 }
-.gallery .gallery__div li .over__lay h3 {
-  color: white;
+.gallery .gallery__div div:nth-child(1) {
+  -ms-grid-column-span: 4;
+  grid-column: span 4;
+  min-height: 450px;
 }
-.gallery .gallery__div li:hover .over__lay {
-  visibility: visible;
+.gallery .gallery__div div:nth-child(2) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  min-height: 450px;
 }
-.gallery .gallery__div li img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.gallery .gallery__div div:nth-child(3) {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
 }
 
 .footer {
@@ -845,6 +848,41 @@ header .hero__div .hero__section .hero__overlay a:hover {
     width: 100%;
     height: 100%;
     margin: 20px 0px 0px 0px;
+  }
+
+  .gallery {
+    padding: 25px 15px;
+  }
+  .gallery .gallery__div {
+    padding: 35px 0px;
+  }
+  .gallery .gallery__div div {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+  .gallery .gallery__div div:nth-child(1) {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+  .gallery .gallery__div div:nth-child(2) {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+  .gallery .gallery__div div:nth-child(3) {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+  .gallery .gallery__div div:nth-child(4) {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+  .gallery .gallery__div div:nth-child(5) {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+  .gallery .gallery__div div:nth-child(6) {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
   }
 
   .contact .contact__overlay {
