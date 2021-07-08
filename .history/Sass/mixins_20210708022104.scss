@@ -69,7 +69,7 @@
 // Grid Mixin
 @mixin grid($chWdt, $gridWdt) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($chWdt, $gridWdt));
+    grid-template-columns: repeat(auto-fit, minmax($chWdt, $gridWdt));
     gap: 2vw;
     justify-content: center;
     align-items: center;
