@@ -548,17 +548,13 @@ header {
         }
     }
     
-}
-.bottom__section {
-        border-top: 1px solid $dark__white;
-        // padding: 25px 0px;
-        background: #1c1c1c;
-        height: 60px;
+    .bottom__section {
+        // border-top: 1px solid $dark__white;
+        padding: 25px 0px;
         @include flex(column, center, center);
         
         p {
-            font-size: 1rem;
-            font-family: $secondary__font;
+            font-family: $text__font;
             color: $light__white;
             letter-spacing: 1px;
 
@@ -572,6 +568,8 @@ header {
             }
         }
     }
+}
+
 .page__up__arrow {
     @include btn_style;
     position: fixed;
