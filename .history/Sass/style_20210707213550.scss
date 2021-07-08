@@ -308,9 +308,9 @@ header {
         font-size: 2.5rem;
     }
 
-    p {
+    > p {
         text-align: center;
-        padding: 0px 25px;
+        padding: 0px 8px;
         font-size: 1rem;
         font-family: $third__font;
         opacity: 0.6;
@@ -336,12 +336,11 @@ header {
         }
 
         .desDiv {
-            padding: 25px 0px;
+            padding: 15px 0px;
             text-align: left;
 
             h2 {
-                font-family: $secondary__font;
-                font-size: 1.6rem;
+                font-size: 2rem;
                 text-align: left;
             }
 
