@@ -412,7 +412,54 @@
                 }
             }
 
-            
+
+            // Gallery
+            .gallery {
+                padding: 25px 15px;
+
+                h3 {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+
+                .gallery__div {
+                    padding: 35px 0px;
+
+                    div {
+                        grid-column: span 3;
+                        margin: 5px 0px;
+                        width: 100%;
+
+                        &:nth-child(1) {
+                            grid-column: span 3;
+                        }
+
+                        &:nth-child(2) {
+                            grid-column: span 3;
+                            // grid-row: span 2;
+                        }
+                        
+                        &:nth-child(3) {
+                            grid-column: span 3;
+                            // grid-row: span 2;
+                        }
+                        
+                        &:nth-child(4) {
+                            grid-column: span 3;
+                            // grid-row: span 2;
+                        }
+                        
+                        &:nth-child(5) {
+                            grid-column: span 3;
+                            // grid-row: span 2;
+                        }
+                        
+                        &:nth-child(6) {
+                            grid-column: span 3;
+                            // grid-row: span 2;
+                        }
+                        
+                    }
 
 
             // Footer

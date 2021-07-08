@@ -412,7 +412,26 @@
                 }
             }
 
-            
+
+            // Gallery
+            .gallery {
+                padding: 25px 15px;
+
+                h3 {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+
+                .gallery__div {
+                    padding: 35px 0px;
+
+                    div {
+                        grid-column: span 4;
+                        margin: 5px 0px;
+                        width: 100%;
+                        
+                        
+                    }
 
 
             // Footer

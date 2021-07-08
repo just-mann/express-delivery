@@ -955,6 +955,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
     -ms-grid-column-span: 3;
     grid-column: span 3;
     margin: 5px 0px;
+    width: 100%;
   }
   .gallery .gallery__div div:nth-child(1) {
     -ms-grid-column-span: 3;
@@ -1128,80 +1129,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
     opacity: 0.8;
     background: transparent;
     color: #F34963;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 35px 0px;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks {
-    color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks .pInfo {
-    font-size: 1.1rem;
-    color: #b8b7b7;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-    opacity: 0.65;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks .pInfo i {
-    font-size: 1.4rem;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-    margin-right: 3px;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks .pInfo:hover {
-    opacity: 0.9;
-    color: #ffffff;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks .pInfo:hover i {
-    color: #F34963;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks a {
-    text-decoration: none;
-    color: #b8b7b7;
-    font-size: 1.3rem;
-    margin: 5px 0px;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks a:hover {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks .socialDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutUs .about__div .cardDiv .footer .top__section .usefulLinks .socialDiv a {
-    margin: 10px 10px 0px 0px;
-    font-size: 1rem;
-    height: 15px;
-    width: 15px;
   }
 
   .footer .top__section {
