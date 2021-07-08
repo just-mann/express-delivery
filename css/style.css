@@ -884,13 +884,23 @@ header .hero__div .hero__section .hero__overlay a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  .aboutUs .about__div .cardDiv .desDiv {
+    text-align: left;
+    width: 100%;
+    margin: 5px auto;
+  }
+  .aboutUs .about__div .cardDiv .desDiv p {
+    text-align: left;
+    padding-left: 0px;
+  }
+
   .product__description {
     height: auto;
   }
@@ -952,34 +962,34 @@ header .hero__div .hero__section .hero__overlay a:hover {
     padding: 35px 0px;
   }
   .gallery .gallery__div div {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
     margin: 5px 0px;
     width: 100%;
   }
   .gallery .gallery__div div:nth-child(1) {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
   }
   .gallery .gallery__div div:nth-child(2) {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
   }
   .gallery .gallery__div div:nth-child(3) {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
   }
   .gallery .gallery__div div:nth-child(4) {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
   }
   .gallery .gallery__div div:nth-child(5) {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
   }
   .gallery .gallery__div div:nth-child(6) {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
   }
 
   .contact .contact__overlay {
