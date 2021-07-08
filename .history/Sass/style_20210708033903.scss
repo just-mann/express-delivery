@@ -609,15 +609,8 @@ header {
             .socialDiv {
                 @include flex(row, center, center);
 
-                a {
-                    margin: 0px 10px 0px 0px;
-                    font-size: 1.7rem;
-                    padding: 25px;
-                    border-radius: 50%;
-                    height: 40px;
-                    width: 40px;
-                    @include border(2px, $primary__color);
-                    @include flex(column, center, center);
+                i {
+                    margin: 0px 10px;
                 }
             }
         }
