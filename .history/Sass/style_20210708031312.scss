@@ -551,7 +551,7 @@ header {
 
 .footer {
     width: 100%;
-    padding: 20px;
+    padding: 20px 15px;
     background: black;
     
     .top__section {
@@ -567,7 +567,7 @@ header {
             }
 
             p {
-                font-size: 1.1rem;
+                // font-size: 1rem;
                 color: $dark__white;
                 opacity: 0.65;
             }

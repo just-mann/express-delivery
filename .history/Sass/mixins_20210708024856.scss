@@ -315,7 +315,10 @@
             }
 
 
-            
+            // Footer
+            .footer {
+                @include my_container;
+            }
 
 
             // Scroll Up
@@ -412,17 +415,6 @@
 
 
             // Contact
-
-
-            // Footer
-            .footer {
-                .top__section {
-                    // @include my_container;
-                    max-width: 1100px;
-                    margin: 0 auto;
-                    padding: 35px 0px;
-                }
-            }
             
         }
     }

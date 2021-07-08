@@ -551,7 +551,7 @@ header {
 
 .footer {
     width: 100%;
-    padding: 20px;
+    padding: 20px 15px;
     background: black;
     
     .top__section {
@@ -563,11 +563,11 @@ header {
             
             h4 {
                 margin-top: 2rem;
-                margin: 25px 0px 20px 0px;
+                margin: 15px 0px 20px 0px;
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 color: $dark__white;
                 opacity: 0.65;
             }
