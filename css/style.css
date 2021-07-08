@@ -754,8 +754,10 @@ header .hero__div .hero__section .hero__overlay a:hover {
     font-size: 2rem;
   }
   header .hero__div .hero__section .hero__overlay .firstPara {
+    text-align: center;
     font-size: 1rem;
     letter-spacing: 1px;
+    padding: 25px;
     line-height: 35px;
   }
 
