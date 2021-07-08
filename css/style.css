@@ -546,7 +546,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
   -webkit-transition: 0.7s;
   transition: 0.7s;
   text-decoration: none;
-  width: 100%;
+  width: 30%;
+  float: left;
   font-size: 1.2rem;
   font-weight: 150;
   letter-spacing: 1px;
