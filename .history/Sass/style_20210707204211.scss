@@ -530,8 +530,8 @@ header {
             color: $light__white;
             @include flex(column, center, flex-start);
 
-            h4 {
-                margin-top: 2rem;
+            h2 {
+                margin-top: 3rem;
             }
 
             a {

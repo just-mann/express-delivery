@@ -655,117 +655,11 @@ header .hero__div .hero__section .hero__overlay a:hover {
 
 .footer {
   width: 100%;
-}
-.footer .footer__top {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 15px 60px;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 100%;
-  background: #161515;
-  color: #ffffff;
-  min-height: 60vh;
-  text-align: left;
-}
-.footer .footer__top .usefulLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0 10px;
-}
-.footer .footer__top .usefulLinks h4 {
-  font-family: "Red Hat Text", sans-serif;
-  letter-spacing: 2px;
-  font-size: 2rem;
-  margin: 15px 0px;
-  font-weight: bold;
-}
-.footer .footer__top .usefulLinks div a {
-  display: block;
-  font-family: "Red Hat Text", sans-serif;
-  color: #b8b7b7;
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin: 10px 0px;
-  font-weight: 300;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0.65;
-  text-decoration: none;
-}
-.footer .footer__top .usefulLinks div a:hover {
-  color: #ffffff;
-  opacity: 1;
-}
-.footer .footer__top .infoDiv {
-  min-height: 175px;
-  padding: 0px 10px;
-  margin: 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.footer .footer__top .infoDiv h4 {
-  font-family: "Red Hat Text", sans-serif;
-  letter-spacing: 2px;
-  font-size: 2rem;
-  margin: 15px 0px;
-  font-weight: bold;
-}
-.footer .footer__top .infoDiv p {
-  font-family: "Red Hat Text", sans-serif;
-  color: #b8b7b7;
-  font-size: 1.2rem;
-  letter-spacing: 0.8px;
-  margin: 5px 0px 20px 0px;
-  font-weight: 100;
-  opacity: 0.65;
-}
-.footer .footer__top .infoDiv .social__links a {
-  color: #ffffff;
-  font-size: 2.2rem;
-  margin: 0px 15px 0px 0px;
-}
-.footer .footer__bottom {
+  padding: 20px 15px;
   background: black;
-  color: #ffffff;
-  text-align: center;
-  padding: 15px 0px;
 }
-.footer .footer__bottom div {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 15px 60px;
+.footer .top__section .usefulLinks {
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,22 +670,17 @@ header .hero__div .hero__section .hero__overlay a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.footer .footer__bottom div p {
+.footer .top__section .usefulLinks h4 {
+  margin-top: 2rem;
+}
+.footer .top__section .usefulLinks a {
+  color: #b8b7b7;
   font-size: 1.2rem;
-  font-family: "Red Hat Text", sans-serif;
-  letter-spacing: 3px;
-  text-align: center;
-}
-.footer .footer__bottom div p span {
-  font-family: "Permanent Marker", cursive;
-  color: #F34963;
-}
-.footer .footer__bottom div p span span {
-  color: #ffffff;
+  margin: 5px 0px;
 }
 
 .page__up__arrow {

@@ -520,26 +520,114 @@ header {
 
 .footer {
     width: 100%;
-    padding: 20px 15px;
-    background: black;
+    // padding: 0px 15px;
+    // overflow-x: hidden;
 
-    .top__section {
-
+    .footer__top {
+        @include my_container;
+        @include grid(30em, 1fr);
+        max-width: 100%;
+        background: #161515;
+        color: $light__white;
+        min-height: 60vh;
+        text-align: left;
 
         .usefulLinks {
-            color: $light__white;
-            @include flex(column, center, flex-start);
-
+            @include flex(column, space-between, flex-start);
+            margin: 0 auto;
+            
             h4 {
-                margin-top: 2rem;
+                font-family: $third__font;
+                letter-spacing: 2px;
+                font-size: 2rem;
+                margin: 15px 0px;
+                font-weight: bold;
             }
+            
+            div {
+                a {
+                    display: block;
+                    font-family: $third__font;
+                    color: $dark__white;
+                    color: $light__white;
+                    font-size: 1.2rem;
+                    margin: 10px 0px;
+                    font-weight: 300;
+                    transition: 0.5s;
+                    opacity: 0.65;
+                    text-decoration: none;
 
-            a {
-                color: $dark__white;
-                font-size: 1.2rem;
-                margin: 5px 0px
+                    &:hover {
+                        color: $light__white;
+                        opacity: 1;
+                    }
+                }
             }
         }
+        
+        .infoDiv {
+            min-height: 175px;
+            padding: 0px 10px;
+            margin: 0 10px;
+            @include flex(column, space-between, flex-start);
+
+            h4 {
+                font-family: $third__font;
+                letter-spacing: 2px;
+                font-size: 2rem;
+                margin: 15px 0px;
+                font-weight: bold;
+            }
+
+            p {
+                font-family: $third__font;
+                color: $dark__white;
+                font-size: 1.2rem;
+                letter-spacing: 0.8px;
+                margin: 5px 0px 20px 0px;
+                font-weight: 100;
+                opacity: 0.65;
+            }
+
+            .social__links {
+                a {
+                    color: $light__white;
+                    font-size: 2.2rem;
+                    margin: 0px 15px 0px 0px;
+                }
+            }
+        }
+
+
+    }
+
+    .footer__bottom {
+        background: black;
+        color: $light__white;
+        text-align: center;
+        padding: 15px 0px;
+        
+        div {
+            @include my_container;
+            @include flex(column, center, center);
+            p {
+                // @include my_container;
+                font-size: 1.2rem;
+                font-family: $third__font;
+                letter-spacing: 3px;
+                text-align: center;
+
+                span {
+                    font-family: $primary__font;
+                    color: $primary__color;
+
+                    span {
+                        color: $light__white;
+                    }
+                }
+            }
+        }
+
     }
 }
 
