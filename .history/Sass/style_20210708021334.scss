@@ -514,7 +514,6 @@ header {
             &:nth-child(2) {
                 grid-column: span 2;
                 height: 450px;
-                padding: 0px;
                 object-fit: cover;
 
                 img {
@@ -526,7 +525,6 @@ header {
             
             &:nth-child(3) {
                 grid-column: span 3;
-                padding: 0px;
             }
             
         }
