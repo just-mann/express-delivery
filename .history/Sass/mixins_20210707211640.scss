@@ -199,7 +199,6 @@
                             padding: 0px 0px 0px 0px;
 
                             h3 {
-                                font-size: 1.6rem;
                                 margin: 15px 0px 10px 0px;
                             }
 
@@ -240,6 +239,7 @@
                         select {
                             font-size: 1rem;
                             width: 100%;
+                            // padding: 0px;
                         }
 
                         label {
@@ -254,7 +254,6 @@
 
                         input[type="submit"] {
                             width: 100%;
-                            font-size: 1rem;
                         }
                     }
                 }

@@ -558,6 +558,7 @@ header {
     @include flex(column, center, center);
     
     p {
+        background: yellow;
         font-size: 1rem;
         font-family: $secondary__font;
         color: $light__white;

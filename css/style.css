@@ -682,6 +682,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
   color: #b8b7b7;
   font-size: 1rem;
   margin: 5px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .footer .top__section .usefulLinks a:hover {
   color: #ffffff;
@@ -783,7 +785,11 @@ header .hero__div .hero__section .hero__overlay a:hover {
     height: auto;
   }
   .aboutUs h1 {
+    font-size: 2rem;
     text-align: center;
+  }
+  .aboutUs p {
+    font-size: 1rem;
   }
   .aboutUs .about__div {
     padding: 0px 15px;
@@ -807,6 +813,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
     height: auto;
   }
   .product__description h1 {
+    font-size: 2rem;
     text-align: center;
   }
   .product__description .servDiv {
@@ -835,10 +842,11 @@ header .hero__div .hero__section .hero__overlay a:hover {
     padding: 0px 0px 0px 0px;
   }
   .product__description .servDiv .servCard .detDiv h3 {
+    font-size: 1.6rem;
     margin: 15px 0px 10px 0px;
   }
   .product__description .servDiv .servCard .detDiv p {
-    font-size: 17px;
+    font-size: 1rem;
   }
   .product__description .servDiv .servCard .order {
     -webkit-box-ordinal-group: 3;
@@ -854,14 +862,19 @@ header .hero__div .hero__section .hero__overlay a:hover {
   .contact .contact__overlay {
     padding: 0px 15px;
   }
+  .contact .contact__overlay h3 {
+    font-size: 1.6rem;
+  }
   .contact .contact__overlay form {
     width: 100%;
     padding: 15px 0px;
   }
   .contact .contact__overlay form select {
+    font-size: 1rem;
     width: 100%;
   }
   .contact .contact__overlay form label {
+    font-size: 1rem;
     width: 100%;
     margin: 25px 0px 0px 0px;
   }
@@ -870,32 +883,11 @@ header .hero__div .hero__section .hero__overlay a:hover {
   }
   .contact .contact__overlay form input[type=submit] {
     width: 100%;
+    font-size: 1rem;
   }
 
-  .footer .footer__top {
-    padding: 0px 15px;
-  }
-  .footer .footer__top .usefulLinks {
-    margin: 10px 0px;
-    padding: 0px 15px;
-  }
-  .footer .footer__top .usefulLinks h4 {
-    font-size: 1.7rem;
-  }
-  .footer .footer__top .usefulLinks div a {
-    font-size: 1rem;
-    font-weight: 100;
-  }
-  .footer .footer__top .infoDiv {
-    padding: 0px 15px;
-    margin: 15px 0px;
-  }
-  .footer .footer__top .infoDiv h4 {
-    font-size: 1.7rem;
-    font-weight: 100;
-  }
-  .footer .footer__top .infoDiv p {
-    font-size: 1rem;
-    font-weight: 100;
+  .page__up__arrow {
+    bottom: 20px;
+    right: 15px;
   }
 }
