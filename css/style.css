@@ -883,6 +883,10 @@ header .hero__div .hero__section .hero__overlay a:hover {
   .gallery {
     padding: 25px 15px;
   }
+  .gallery h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
   .gallery .gallery__div {
     padding: 35px 0px;
   }
