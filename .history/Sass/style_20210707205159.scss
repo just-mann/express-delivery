@@ -522,6 +522,7 @@ header {
     width: 100%;
     padding: 20px 15px;
     background: black;
+    // border-top: 1px solid $dark__white;
     
     .top__section {
         
@@ -549,8 +550,7 @@ header {
     }
     
     .bottom__section {
-        // border-top: 1px solid $dark__white;
-        padding: 25px 0px;
+        border-top: 1px solid $dark__white;
         @include flex(column, center, center);
         
         p {
@@ -559,11 +559,6 @@ header {
 
             span {
                 color: $primary__color;
-            }
-
-            .currentYear {
-                font-family: $secondary__font;
-                color: $light__white;
             }
         }
     }

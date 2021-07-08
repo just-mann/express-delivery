@@ -522,24 +522,26 @@ header {
     width: 100%;
     padding: 20px 15px;
     background: black;
-    
+    border-bottom: 1px solid $dark__white;
+    border-top: 1px solid $dark__white;
+
     .top__section {
-        
-        
+
+
         .usefulLinks {
             color: $light__white;
             @include flex(column, center, flex-start);
-            
+
             h4 {
                 margin-top: 2rem;
             }
-            
+
             a {
                 text-decoration: none;
                 color: $dark__white;
                 font-size: 1rem;
                 margin: 5px 0px;
-                
+
                 &:hover {
                     color: $light__white;
                     text-decoration: none;
@@ -547,23 +549,14 @@ header {
             }
         }
     }
-    
+
     .bottom__section {
-        // border-top: 1px solid $dark__white;
-        padding: 25px 0px;
-        @include flex(column, center, center);
         
         p {
-            font-family: $primary__font;
             color: $light__white;
 
             span {
                 color: $primary__color;
-            }
-
-            .currentYear {
-                font-family: $secondary__font;
-                color: $light__white;
             }
         }
     }
