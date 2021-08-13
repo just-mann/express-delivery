@@ -78,6 +78,7 @@ header {
         @include my_container;
         width: 100%;
         height: 4.375rem;
+        // padding: 0rem 2.1875rem;
         background: $light__white;
         display: flex;
         justify-content: space-between;
@@ -140,15 +141,15 @@ header {
         right: 0;
         width: 100%;
         min-height: 100vh;
-        z-index: 500;
-        opacity: 0.93;
+        z-index: 1500;
+        opacity: 0.97;
         display: none;
 
         .closeBtn {
             font-size: 3rem;
             // font-weight: 300;
-            padding: 0 1.25rem;
-            margin-top: 0.05rem;
+            padding: 0.3125rem 1.25rem;
+            margin-top: 0.3125rem;
             margin-bottom: 0.9375rem;
             color: $light__white;
 
@@ -202,7 +203,7 @@ header {
                 .firstPara {
                     font-family: $third__font;
                     font-size: 1.5625rem;
-                    // line-height: 3em;
+                    line-height: 3em;
                     max-width: 46.875rem;
                     margin: 0.625rem 0rem 0rem 0rem;
                     color: $dark__white;
@@ -211,7 +212,7 @@ header {
 
                 a {
                     @include btn_style;
-                    margin: 3rem 5rem 0rem 5rem;
+                    margin: 3rem 0rem 0rem 0rem;
                 }
             }
         }
@@ -309,7 +310,7 @@ header {
     .par {
         text-align: center;
         padding: 0rem 2.5rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-family: $third__font;
         opacity: 0.85;
     }
@@ -344,7 +345,7 @@ header {
             }
 
             p {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 text-align: left;
                 padding: 0rem;
                 opacity: 0.85;

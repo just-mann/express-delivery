@@ -78,6 +78,7 @@ header {
         @include my_container;
         width: 100%;
         height: 4.375rem;
+        // padding: 0rem 2.1875rem;
         background: $light__white;
         display: flex;
         justify-content: space-between;

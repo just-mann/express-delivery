@@ -36,7 +36,7 @@ $(() => {
 
     // When user scrolls down, hide side nav and display up arrow.
     $(window).on('scroll', () => {
-        if (window.scrollY > 7) {
+        if (window.scrollY > 5) {
             $('.side__nav__links').hide();
             $('.page__up__arrow').css('display', 'block');
         } else {

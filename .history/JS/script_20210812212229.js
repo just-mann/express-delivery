@@ -19,12 +19,12 @@ $(() => {
     
     // Display side nav when menuBars is clicked
     $('.menuBars').on('click', () => {
-        $('.side__nav__links').show();
+        $('.side__nav__links').show('slow');
     });
 
     // Close side nav when closeBtn is clicked
     $('.closeBtn').on('click', () => {
-        $('.side__nav__links').hide();
+        $('.side__nav__links').hide('slow');
     });
 
     // Hide side nav when its links are clicked
@@ -36,8 +36,8 @@ $(() => {
 
     // When user scrolls down, hide side nav and display up arrow.
     $(window).on('scroll', () => {
-        if (window.scrollY > 7) {
-            $('.side__nav__links').hide();
+        if (window.scrollY > 5) {
+            $('.side__nav__links').hide('slow');
             $('.page__up__arrow').css('display', 'block');
         } else {
             $('.page__up__arrow').css('display', 'none');
