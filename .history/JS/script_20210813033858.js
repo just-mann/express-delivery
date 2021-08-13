@@ -6,14 +6,6 @@ $(() => {
     const year = d.getFullYear();
     let gallImages = document.querySelectorAll('.gallImg');
     let modalImg = document.getElementById('modalImage');
-    let myModal = document.querySelector('.myModal');
-    let caption = document.querySelector('.caption');
-    let closeBtn = document.querySelectorAll('.closeBtn');
-
-
-
-
-
     
     currentYear.html(year);
 
@@ -62,22 +54,11 @@ $(() => {
         }, 600)
     });
 
-    // Display Modal when Images are clicked
     gallImages.forEach((img) => {
-        img.onclick = function() {
+        img.onclick = () => {
             modalImg.src = this.src;
-            caption.alt = this.alt;
-            myModal.style.display = 'block';
+            // modalImg.alt = this.alt;
+            $('.myModal').css('display', 'block');
         }
     });
-
-
-    // Close Button
-    closeBtn.forEach(item => {
-        item.addEventListener('click', () => {
-            myModal.style.display = 'none';
-        });
-    })
-    
-    
 });

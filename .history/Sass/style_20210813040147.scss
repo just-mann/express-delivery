@@ -547,7 +547,7 @@ header {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding: 150px 0; /* Location of the box */
+    padding: 50% 0; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -573,8 +573,7 @@ header {
         margin: auto;
         display: block;
         max-width: 100%;
-        height: 450px;
-        object-fit: cover;
+        min-height: 60%px;
     }
 
     .caption {

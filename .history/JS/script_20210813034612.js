@@ -7,8 +7,8 @@ $(() => {
     let gallImages = document.querySelectorAll('.gallImg');
     let modalImg = document.getElementById('modalImage');
     let myModal = document.querySelector('.myModal');
-    let caption = document.querySelector('.caption');
-    let closeBtn = document.querySelectorAll('.closeBtn');
+    let modalCaption = document.querySelector('.caption');
+    let closeBtn = document.querySelector('.')
 
 
 
@@ -62,22 +62,11 @@ $(() => {
         }, 600)
     });
 
-    // Display Modal when Images are clicked
     gallImages.forEach((img) => {
         img.onclick = function() {
             modalImg.src = this.src;
-            caption.alt = this.alt;
+            modalCaption.alt = this.alt;
             myModal.style.display = 'block';
         }
     });
-
-
-    // Close Button
-    closeBtn.forEach(item => {
-        item.addEventListener('click', () => {
-            myModal.style.display = 'none';
-        });
-    })
-    
-    
 });

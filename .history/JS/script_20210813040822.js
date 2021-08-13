@@ -66,7 +66,7 @@ $(() => {
     gallImages.forEach((img) => {
         img.onclick = function() {
             modalImg.src = this.src;
-            caption.alt = this.alt;
+            modalCaption.alt = this.alt;
             myModal.style.display = 'block';
         }
     });

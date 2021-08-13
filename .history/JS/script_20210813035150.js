@@ -7,7 +7,7 @@ $(() => {
     let gallImages = document.querySelectorAll('.gallImg');
     let modalImg = document.getElementById('modalImage');
     let myModal = document.querySelector('.myModal');
-    let caption = document.querySelector('.caption');
+    let modalCaption = document.querySelector('.caption');
     let closeBtn = document.querySelectorAll('.closeBtn');
 
 
@@ -66,7 +66,7 @@ $(() => {
     gallImages.forEach((img) => {
         img.onclick = function() {
             modalImg.src = this.src;
-            caption.alt = this.alt;
+            modalCaption.alt = this.alt;
             myModal.style.display = 'block';
         }
     });
