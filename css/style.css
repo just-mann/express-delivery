@@ -173,8 +173,6 @@ header nav .nav__links .quoteGet {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   text-decoration: none;
 }
 header nav .nav__links .quoteGet:hover {
@@ -201,7 +199,6 @@ header .side__nav__links {
   width: 100%;
   min-height: 100vh;
   z-index: 500;
-  opacity: 0.93;
   display: none;
 }
 header .side__nav__links .closeBtn {
@@ -292,8 +289,6 @@ header .hero__div .hero__section .hero__overlay a {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   text-decoration: none;
   margin: 3rem 5rem 0rem 5rem;
 }
@@ -386,10 +381,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   text-decoration: none;
-  opacity: 0.75;
   margin: 1.125rem 0rem 0rem 0rem;
 }
 .product__description .servDiv .servCard .detDiv a:hover {
@@ -415,10 +407,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
   height: 100%;
   overflow: hidden;
 }
-.product__description .servDiv .servCard .imgDiv img:hover {
-  cursor: pointer;
-}
-
 .aboutUs {
   padding: 1.875rem 0rem;
   height: auto;
@@ -546,8 +534,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   text-decoration: none;
   width: 30%;
   float: left;
@@ -812,8 +798,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   text-decoration: none;
   position: fixed;
   bottom: 2.5rem;
@@ -822,6 +806,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-size: 1.4rem;
   text-align: center;
   z-index: 500;
+  -webkit-transition: 0.7s;
   transition: 0.7s;
   display: none;
 }
@@ -1130,8 +1115,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
     font-family: "Barlow";
     font-weight: 150;
     letter-spacing: 0.0625rem;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
     text-decoration: none;
     opacity: 0.75;
     margin: 1.125rem 0rem 0rem 0rem;

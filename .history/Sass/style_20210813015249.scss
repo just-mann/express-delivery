@@ -259,6 +259,7 @@ header {
 
                 a {
                     @include btn_style;
+                    opacity: 0.75;
                     margin: 1.125rem 0rem 0rem 0rem;
 
                     &:hover {
@@ -281,7 +282,7 @@ header {
                     overflow: hidden;
 
                     &:hover {
-                    //    cursor: pointer;
+                       cursor: pointer; 
                     }
                 }
             }
