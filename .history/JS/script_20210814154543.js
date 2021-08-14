@@ -66,5 +66,13 @@ $(() => {
             myModal.style.display = 'none';
         });
     })
+
+    // myModal.onclick = function() {
+    //     myModal.style.display = 'none';
+    // }
+
+    // modalImg.onclick = function() {
+    //     myModal.style.display = 'block';
+    // }
     
 });
