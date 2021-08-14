@@ -344,7 +344,60 @@
     @media (min-width: $width) {
         @if $width >= 56.25rem {
 
-            
+            // Header 
+            header {
+                .top-section {
+                    display: none;
+                    
+                    div {
+                        // padding: 0rem 1.25rem;
+
+                        p {
+                            
+                        }
+                    }
+                }
+
+                nav {
+                    padding: 0rem 1.25rem;
+
+                    .logo {
+                        font-size: 1.9rem;
+                    }
+
+                    .nav__links {
+                        display: none;
+                    }
+
+                    .menuBars {
+                        display: block;
+                    }
+                }
+
+                .hero__div {
+                    min-height: auto;
+
+                    .hero__section {
+
+                        .hero__overlay {
+                            padding: 1.875rem 0rem;
+
+                            h2 {
+                                font-size: 9vw;
+                            }
+
+                            .firstPara {
+                                text-align: center;
+                                font-size: 5vw;
+                                letter-spacing: 0.0625rem;
+                                padding: 2.1875rem;
+                                line-height: 2.1875rem;
+                            }
+                        }
+                    }
+                }
+            }
+
             // About Us
             .aboutUs {
                 min-height: 100vh;

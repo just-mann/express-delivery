@@ -94,6 +94,9 @@
 
             // Header 
             header {
+                .hero__div {
+                    min-height: auto;
+                }
                 .top-section {
                     display: none;
                     
@@ -123,7 +126,7 @@
                 }
 
                 .hero__div {
-                    min-height: auto;
+                    min-height: 100vh;
 
                     .hero__section {
 
@@ -344,7 +347,7 @@
     @media (min-width: $width) {
         @if $width >= 56.25rem {
 
-            
+
             // About Us
             .aboutUs {
                 min-height: 100vh;

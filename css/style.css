@@ -904,7 +904,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
     display: block;
   }
   header .hero__div {
-    min-height: 100vh;
+    min-height: auto;
   }
   header .hero__div .hero__section .hero__overlay {
     padding: 1.875rem 0rem;
