@@ -124,8 +124,11 @@ header .top-section div p:hover i {
   color: #F34963;
 }
 header nav {
+  max-width: 93.75rem;
+  margin: 0 auto;
+  padding: 0.9375rem 3.75rem;
   width: 100%;
-  height: 4.375rem;
+  height: 4.325rem;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
