@@ -13,7 +13,7 @@
     font-family: $secondary__font;
     font-weight: 150;
     letter-spacing: 0.0625rem;
-    transition: 0.7s;
+    // transition: 0.7s;
     text-decoration: none;
 
     &:hover {
@@ -90,7 +90,7 @@
 @mixin responsive($width){
     @media (max-width: $width) {
         // Mobile Phone Styles
-        @if $width <= 50rem {
+        @if $width <= 60rem {
 
             // Header 
             header {

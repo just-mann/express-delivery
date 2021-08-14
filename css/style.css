@@ -173,6 +173,8 @@ header nav .nav__links .quoteGet {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   text-decoration: none;
 }
 header nav .nav__links .quoteGet:hover {
@@ -289,6 +291,8 @@ header .hero__div .hero__section .hero__overlay a {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   text-decoration: none;
   margin: 3rem 5rem 0rem 5rem;
 }
@@ -381,6 +385,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   text-decoration: none;
   margin: 1.125rem 0rem 0rem 0rem;
 }
@@ -534,6 +540,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   text-decoration: none;
   width: 30%;
   float: left;
@@ -686,7 +694,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
 .myModal .closeBtn {
   position: absolute;
   top: 15px;
-  right: 35px;
+  right: 12px;
   color: #f1f1f1;
   font-size: 40px;
   -webkit-transition: 0.3s;
@@ -702,6 +710,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 250;
 }
 .myModal .caption {
   margin: auto;
@@ -854,6 +863,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-family: "Barlow";
   font-weight: 150;
   letter-spacing: 0.0625rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   text-decoration: none;
   position: fixed;
   bottom: 2.5rem;
@@ -862,7 +873,6 @@ header .hero__div .hero__section .hero__overlay a:hover {
   font-size: 1.4rem;
   text-align: center;
   z-index: 500;
-  -webkit-transition: 0.7s;
   transition: 0.7s;
   display: none;
 }
@@ -1171,6 +1181,8 @@ header .hero__div .hero__section .hero__overlay a:hover {
     font-family: "Barlow";
     font-weight: 150;
     letter-spacing: 0.0625rem;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
     text-decoration: none;
     opacity: 0.75;
     margin: 1.125rem 0rem 0rem 0rem;

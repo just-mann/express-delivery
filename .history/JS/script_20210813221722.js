@@ -81,6 +81,12 @@ $(() => {
             myModal.style.display = 'none';
         });
     })
+    
+    // closeBtn.forEach(item => {
+    //     item.addEventListener('click', () => {
+    //         myModal.style.display = 'none';
+    //     });
+    // })
 
     myModal.onclick = function() {
         myModal.style.display = 'none';

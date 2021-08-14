@@ -81,13 +81,20 @@ $(() => {
             myModal.style.display = 'none';
         });
     })
+    
+    // closeBtn.forEach(item => {
+    //     item.addEventListener('click', () => {
+    //         myModal.style.display = 'none';
+    //     });
+    // })
 
     myModal.onclick = function() {
-        myModal.style.display = 'none';
+        if (!modalImg.onclick) {
+            myModal.style.display = 'none';
+        } else {
+            return;
+        }
     }
-
-    // modalImg.onclick = function() {
-    //     myModal.style.display = 'block';
-    // }
+    
     
 });
