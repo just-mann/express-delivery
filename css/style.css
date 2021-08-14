@@ -124,9 +124,6 @@ header .top-section div p:hover i {
   color: #F34963;
 }
 header nav {
-  max-width: 93.75rem;
-  margin: 0 auto;
-  padding: 0.9375rem 3.75rem;
   width: 100%;
   height: 4.375rem;
   background: #ffffff;
@@ -141,7 +138,7 @@ header nav {
           align-items: center;
 }
 header nav .logo {
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #F34963;
   font-weight: 450;
   letter-spacing: 0.0625rem;
@@ -183,7 +180,7 @@ header nav .nav__links .quoteGet:hover {
   cursor: pointer;
 }
 header nav .menuBars {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #560c88;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -204,7 +201,7 @@ header .side__nav__links {
   display: none;
 }
 header .side__nav__links .closeBtn {
-  font-size: 3rem;
+  font-size: 2.4rem;
   padding: 0 1.25rem;
   margin-top: 0.05rem;
   margin-bottom: 0.9375rem;
