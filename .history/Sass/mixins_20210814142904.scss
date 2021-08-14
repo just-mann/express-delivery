@@ -88,7 +88,7 @@
 // Responsive Mixin
 @mixin responsive($width){
     @media (max-width: $width) {
-        @if $width <= 1100rem {
+        @if $width <= 2500px {
 
             // Header 
             header {
@@ -134,7 +134,7 @@
 
                             .firstPara {
                                 text-align: center;
-                                font-size: 3.5vw;
+                                font-size: 5vw;
                                 letter-spacing: 0.0625rem;
                                 padding: 2.1875rem;
                                 line-height: 2.1875rem;
@@ -204,7 +204,7 @@
                     padding: 0rem 0.9375rem;
                     
                     .servCard {
-                        width: 100%;
+                        max-width: 100%;
                         height: auto;
                         @include flex(column, center, center);
 

@@ -88,7 +88,7 @@
 // Responsive Mixin
 @mixin responsive($width){
     @media (max-width: $width) {
-        @if $width <= 1100rem {
+        @if $width <= 100rem {
 
             // Header 
             header {
