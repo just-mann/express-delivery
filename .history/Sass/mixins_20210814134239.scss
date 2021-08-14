@@ -88,7 +88,7 @@
 // Responsive Mixin
 @mixin responsive($width){
     @media (max-width: $width) {
-        @if $width <= 218.75rem {
+        @if $width <= 350rem {
 
             // Header 
             header {
@@ -340,23 +340,8 @@
 
     // Min Width
     @media (min-width: $width) {
-        @if $width >= 68.75rem {
+        @if $width >= 56.25rem {
 
-            nav {
-                padding: 0rem 1.25rem;
-
-                .logo {
-                    font-size: 1.9rem;
-                }
-
-                .nav__links {
-                    display: none;
-                }
-
-                .menuBars {
-                    display: block;
-                }
-            }
 
             // About Us
             .aboutUs {

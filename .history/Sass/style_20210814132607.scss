@@ -52,7 +52,6 @@ header {
                 transition: 0.7s;
 
                 a {
-                    text-decoration: none;
                     color: $dark__white;
                 }
     
@@ -241,7 +240,7 @@ header {
         
         .servCard {
             @include flex(row, space-between, center);
-            max-width: 100%;
+            width: 62.5rem;
             height: 18.75rem;
 
             .detDiv {
@@ -319,11 +318,11 @@ header {
 
     .about__div {
         padding: 0.9375rem 0rem;
-        max-width: 100%;
+        width: 100%;
         
         .cardDiv {
             padding: 0.9375rem 0rem;
-            max-width: 100%;
+            width: 100%;
             margin: 0.9375rem auto;
 
             .imgDiv{

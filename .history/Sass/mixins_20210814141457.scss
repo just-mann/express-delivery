@@ -88,7 +88,7 @@
 // Responsive Mixin
 @mixin responsive($width){
     @media (max-width: $width) {
-        @if $width <= 218.75rem {
+        @if $width <= 1000px {
 
             // Header 
             header {
@@ -340,7 +340,7 @@
 
     // Min Width
     @media (min-width: $width) {
-        @if $width >= 68.75rem {
+        @if $width >= 978px {
 
             nav {
                 padding: 0rem 1.25rem;

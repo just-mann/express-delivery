@@ -85,14 +85,6 @@ header .top-section div {
   height: 2.8125rem;
 }
 header .top-section div p {
-  font-family: "Red Hat Text", sans-serif;
-  font-size: 0.87rem;
-  font-weight: bold;
-  color: #b8b7b7;
-  letter-spacing: 0.0563rem;
-  margin: 0 0.625rem;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,6 +98,18 @@ header .top-section div p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 0.87rem;
+  font-weight: bold;
+  color: #b8b7b7;
+  letter-spacing: 0.0563rem;
+  margin: 0 0.625rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header .top-section div p a {
+  text-decoration: none;
+  color: #b8b7b7;
 }
 header .top-section div p .emailAdd {
   border-left: 0.0625rem solid #F34963;
@@ -345,7 +349,7 @@ header .hero__div .hero__section .hero__overlay a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 62.5rem;
+  max-width: 100%;
   height: 18.75rem;
 }
 .product__description .servDiv .servCard .detDiv {
@@ -430,11 +434,11 @@ header .hero__div .hero__section .hero__overlay a:hover {
 }
 .aboutUs .about__div {
   padding: 0.9375rem 0rem;
-  width: 100%;
+  max-width: 100%;
 }
 .aboutUs .about__div .cardDiv {
   padding: 0.9375rem 0rem;
-  width: 100%;
+  max-width: 100%;
   margin: 0.9375rem auto;
 }
 .aboutUs .about__div .cardDiv .imgDiv {
@@ -967,11 +971,11 @@ header .hero__div .hero__section .hero__overlay a:hover {
     text-align: center;
   }
   .product__description .servDiv {
-    width: 100%;
+    max-width: 100%;
     padding: 0rem 0.9375rem;
   }
   .product__description .servDiv .servCard {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1082,130 +1086,91 @@ header .hero__div .hero__section .hero__overlay a:hover {
     right: 0.9375rem;
   }
 }
-@media (min-width: 56.25rem) {
-  .aboutUs {
-    min-height: 100vh;
-    padding: 3.4375rem 0rem;
+@media (max-width: 56.25rem) {
+  header .top-section {
+    display: none;
+  }
+  header nav {
+    padding: 0rem 1.25rem;
+  }
+  header nav .logo {
+    font-size: 1.9rem;
+  }
+  header nav .nav__links {
+    display: none;
+  }
+  header nav .menuBars {
+    display: block;
+  }
+  header .hero__div {
+    min-height: auto;
+  }
+  header .hero__div .hero__section .hero__overlay {
+    padding: 1.875rem 0rem;
+  }
+  header .hero__div .hero__section .hero__overlay h2 {
+    font-size: 9vw;
+  }
+  header .hero__div .hero__section .hero__overlay .firstPara {
     text-align: center;
+    font-size: 5vw;
+    letter-spacing: 0.0625rem;
+    padding: 2.1875rem;
+    line-height: 2.1875rem;
+  }
+
+  .aboutUs {
+    height: auto;
   }
   .aboutUs h1 {
-    font-family: "Barlow";
-    margin: 0.9375rem 0rem 1.25rem 0rem;
+    font-size: 2rem;
+    text-align: center;
   }
-  .aboutUs .par {
-    font-size: 1.4rem;
-    width: 43.75rem;
-    margin: 0 auto;
-    margin-bottom: 0.9375rem;
+  .aboutUs p {
+    font-size: 1rem;
   }
   .aboutUs .about__div {
-    max-width: 93.75rem;
-    margin: 0 auto;
-    padding: 0.9375rem 3.75rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 0rem 0.9375rem;
   }
   .aboutUs .about__div .cardDiv {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 62.5rem;
-    height: 25rem;
-  }
-  .aboutUs .about__div .cardDiv .imgDiv {
-    width: 60%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: relative;
-  }
-  .aboutUs .about__div .cardDiv .imgDiv img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  .aboutUs .about__div .cardDiv .desDiv {
-    width: 40%;
-    text-align: left;
-    padding: 1.25rem 2.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .aboutUs .about__div .cardDiv .desDiv h2 {
-    font-family: "Barlow";
-    font-size: 1.7rem;
+  .aboutUs .about__div .cardDiv .desDiv {
+    text-align: left;
+    width: 100%;
+    margin: 0.3125rem auto;
   }
   .aboutUs .about__div .cardDiv .desDiv p {
-    font-family: "Red Hat Text", sans-serif;
-    font-size: 1.1rem;
-    margin: 0rem 0rem 0.9375rem 0rem;
-    opacity: 0.6;
-  }
-  .aboutUs .about__div .cardDiv .desDiv a {
-    border: 0.1875rem solid #F34963;
-    background: #F34963;
-    color: #ffffff;
-    padding: 0.625rem 0.9375rem;
-    font-family: "Barlow";
-    font-weight: 150;
-    letter-spacing: 0.0625rem;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    text-decoration: none;
-    opacity: 0.75;
-    margin: 1.125rem 0rem 0rem 0rem;
-  }
-  .aboutUs .about__div .cardDiv .desDiv a:hover {
-    border: 0.1875rem solid #F34963;
-    background: transparent;
-    cursor: pointer;
-  }
-  .aboutUs .about__div .cardDiv .desDiv a:hover {
-    opacity: 0.8;
-    background: transparent;
-    color: #F34963;
+    text-align: left;
+    padding-left: 0rem;
   }
 
-  .footer .top__section {
-    max-width: 68.75rem;
-    margin: 0 auto;
-    padding: 2.1875rem 0rem;
+  .product__description {
+    height: auto;
   }
-  .footer .top__section .usefulLinks {
-    color: #ffffff;
+  .product__description h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .product__description .servDiv {
+    max-width: 100%;
+    padding: 0rem 0.9375rem;
+  }
+  .product__description .servDiv .servCard {
+    max-width: 100%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1216,40 +1181,102 @@ header .hero__div .hero__section .hero__overlay a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .footer .top__section .usefulLinks .pInfo {
-    font-size: 1.1rem;
-    color: #b8b7b7;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-    opacity: 0.65;
+  .product__description .servDiv .servCard .detDiv {
+    width: 100%;
+    padding: 0rem 0rem 0rem 0rem;
   }
-  .footer .top__section .usefulLinks .pInfo i {
-    font-size: 1.4rem;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-    margin-right: 0.1875rem;
+  .product__description .servDiv .servCard .detDiv h3 {
+    font-size: 1.6rem;
+    margin: 0.9375rem 0rem 0.625rem 0rem;
   }
-  .footer .top__section .usefulLinks .pInfo:hover {
-    opacity: 0.9;
-    color: #ffffff;
+  .product__description .servDiv .servCard .detDiv p {
+    font-size: 1rem;
   }
-  .footer .top__section .usefulLinks .pInfo:hover i {
-    color: #F34963;
+  .product__description .servDiv .servCard .order {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  .footer .top__section .usefulLinks a {
-    text-decoration: none;
-    color: #b8b7b7;
-    font-size: 1.3rem;
+  .product__description .servDiv .servCard .imgDiv {
+    width: 100%;
+    height: 100%;
+    margin: 1.25rem 0rem 0rem 0rem;
+  }
+
+  .gallery {
+    padding: 1.5625rem 0.9375rem;
+  }
+  .gallery h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .gallery .gallery__div {
+    padding: 2.1875rem 0rem;
+  }
+  .gallery .gallery__div div {
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
     margin: 0.3125rem 0rem;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
+    width: 100%;
   }
-  .footer .top__section .usefulLinks a:hover {
-    color: #ffffff;
-    text-decoration: none;
+  .gallery .gallery__div div:nth-child(1) {
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
+  }
+  .gallery .gallery__div div:nth-child(2) {
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
+  }
+  .gallery .gallery__div div:nth-child(3) {
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
+  }
+  .gallery .gallery__div div:nth-child(4) {
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
+  }
+  .gallery .gallery__div div:nth-child(5) {
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
+  }
+  .gallery .gallery__div div:nth-child(6) {
+    -ms-grid-column-span: 5;
+    grid-column: span 5;
+  }
+
+  .contact .contact__overlay {
+    padding: 0rem 0.9375rem;
+  }
+  .contact .contact__overlay h3 {
+    font-size: 1.6rem;
+  }
+  .contact .contact__overlay form {
+    width: 100%;
+    padding: 0.9375rem 0rem;
+  }
+  .contact .contact__overlay form select {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .contact .contact__overlay form label {
+    font-size: 1rem;
+    width: 100%;
+    margin: 1.5625rem 0rem 0rem 0rem;
+  }
+  .contact .contact__overlay form div {
+    width: 100%;
+  }
+  .contact .contact__overlay form input[type=submit] {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .page__up__arrow {
+    bottom: 1.25rem;
+    right: 0.9375rem;
   }
 }

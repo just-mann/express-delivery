@@ -11,8 +11,7 @@ $(() => {
     let closeBtn = document.querySelectorAll('.closeBtn');
 
 
-
-    console.log(window.innerWidth);
+    
 
 
     
